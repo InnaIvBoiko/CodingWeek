@@ -2,83 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/CodingWeek/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABPlBMVEUAAAAeHiAdHSAcHSAcHiAdHiAeHiAcHSAcHSAcHSAcHSAcHSAdHSAeHSAcHSAcHSAcHSAcHSAeHiAcHSAbHiAdHSAcHSAcHSAcHSAcHSAcHiAeHiAcHSAcHSAaGx4bHB8jJCc6Oz4oKCssLS8tLjFFRUjV1dZjY2UgISQkJSh2dnmFhYcnKCoZGh1KSk3r6+xpamxbXF6qq6ylpaetra6lpaZubnBJSk3q6upra20oKSyKiozu7u7z8/OZmZsvMDNPT1K2trfIyMnOz8+6urtgYGNqamw4OTxLTE6BgoOSkpRKS01ERUhrbG4XGBtJSkxPUFInKCseHyJJSUwYGRwZGx5xcXM6Oz0VFhlcXF/t7e1QUVPk5OS9vb6Ki43Ozs/LzMw0NThcXV/BwcKio6RGR0kfICMlJikdHiH/////WTp0AAAAHXRSTlMAAAAAAAAHSa7o/bBMBg6C7IEF+wVN66+t5w4GBwRslWwAAAABYktHRGm8a8S0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH6AMOCh0xMpnXXAAAARJJREFUOMud02dTwkAQBuDVqIEgBMHQZO8Qe4kiggIWFEVsWBB7BRX9/7/AfGKiZjej79d7Zuf25l6AngHV49XwVzSvb9DfC6AE9CASCQ4FFAjpYSQT1ofBiCCTiApRZBODOA/ioPFAA3TJX4GQiFLSIDWalnJs3E6+ATExOTU9MzuXmieAubCYWcou5/IrggCrhWJpbX1jsyxJkNnaruzsVukJe7X9g8OjY6cJ1tUtUD8xT89Mxy3Oyw3zolBvohT2qV1weVW5vrm9qzaplxT3D49Pzy8tSQFstHOvb+8/z+1biM7Hp0AGWIsg8gD/BVy/nOunjfEgCipfHMOteiHoSzDl1RMKQP+I4XOuv0dNKvAF8IJ9K146C6cAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDMtMTRUMTA6Mjk6NDkrMDA6MDCIWMzLAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAzLTE0VDEwOjI5OjQ5KzAwOjAw+QV0dwAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUcHSAcHSAcHSAcHSAcHSAcHSAcHSAcHSAcHSAaGx8bHB8wMTRcXV8sLTBOT1ItLjAdHiEaGx5EREeZmptwcXLHx8d0dXcZGh1DREaYmJpfX2GmpqhjZGYeHyIkJShAQUQhIiUyMzYfICORkpOBgYOFhodXWFppamwvMDP///+UCq33AAAACHRSTlMNfOd99ubl/npHz7AAAAABYktHRCnKt4UkAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAB3RJTUUH6AMOCh0xMpnXXAAAAG9JREFUGNNlj+cOgCAQg09RRNwbF+7x/k9ooogQ+6v9cmmuAIZJpEwEgCyiyEJgE00YHB04IIxLKb3NA6jnB2EUfyBJs7woFVCxumm7XgLOh3qcZtmRsGXdROdzMe7HKfLbUb2Z/B/DOrD/4wDp8y9ILwoda72iEgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMy0xNFQxMDoyOTo0OSswMDowMIhYzMsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDMtMTRUMTA6Mjk6NDkrMDA6MDD5BXR3AAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS05Nng5Ni5wbmciLAogICAgICAgICAgICAic2l6ZXMiOiAiOTZ4OTYiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICAgICAgfQogICAgXSwKICAgICJ0aGVtZV9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=" />
+    <link
+      rel="mask-icon"
+      href="/CodingWeek/assets/safari-pinned-tab-afed17fc.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>jefferson*</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     
     <script type="module" crossorigin src="/CodingWeek/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/CodingWeek/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/CodingWeek/assets/index-184f3b71.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+    <header class="header"></header>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/CodingWeek/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/CodingWeek/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
-
+    <main>
+      
+      
+      
+      
+      
+      
+    </main>
+    
 
     
   </body>
