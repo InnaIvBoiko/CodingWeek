@@ -1,22 +1,24 @@
-<section class="FAQ-section">
+<section class="FAQ-section" id="FAQ">
     <div class="container">
         <h2 class="FAQ-headline">FAQ</h2>
-        <ul class="FAQ-list">
-            <li class="FAQ-item">
-                <div class="FAQ-item-container">
-                    <p>What programming languages ​​are most often used in your project?</p>
-                    <button class="FAQ-arrow-btn" type="button">
+        <ul class="FAQ-list accordion-container">
+            <li class="FAQ-item ac">
+                <div class="FAQ-item-container ac-header">
+                    <h3 class="FAQ-item-headline">What programming languages ​​are most often used in your project?</h3>
+                    <button class="FAQ-arrow-btn ac-trigger" type="button">
                         <svg
                         class="FAQ-arrow-icon"
-                        width="20"
+                        width="20" 
                         height="20"
                         aria-label="arrow up icon"
                         >
-                        <use href="/src/img/sprite.svg#icon-down-btn"></use>
+                        <use href="/src/img/sprite.svg#icon-up-Btn"></use>
                         </svg>
                     </button>
                 </div>
-                <p class="FAQ-texr">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                <div class="ac-panel">
+                    <p class="FAQ-texr ac-text">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
             </li>
             <li class="FAQ-item">
                 <div class="FAQ-item-container">
@@ -84,7 +86,7 @@
             </li>
             <li class="FAQ-item">
                 <div class="FAQ-item-container">
-                    <p>What does the process of developing a software product look like from idea to implementation?</p>
+                    <h3 class="FAQ-item-headline">What does the process of developing a software product look like from idea to implementation?</h3>
                     <button class="FAQ-arrow-btn" type="button">
                         <svg
                         class="FAQ-arrow-icon"
