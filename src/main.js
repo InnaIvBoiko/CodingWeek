@@ -1,3 +1,4 @@
+// parts
 import about from "./js/about";
 import benefits from "./js/benefits";
 import covers from "./js/covers";
@@ -7,6 +8,7 @@ import projects from "./js/projects";
 import header from "./js/header";
 import footer from "./js/footer";
 import reviews from "./js/reviews";
+// libraries
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import Accordion from 'accordion-js';
