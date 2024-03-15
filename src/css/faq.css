@@ -130,7 +130,7 @@
         margin-right: 32px;
     }    
 
-    #FAQ .FAQ-item:nth-child(even) h3{
+    #FAQ .FAQ-item:nth-child(even) h3, #FAQ .FAQ-item:nth-child(even) p{
         padding-left: 32px;
     }
 }
