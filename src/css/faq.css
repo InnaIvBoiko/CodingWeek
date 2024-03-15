@@ -52,7 +52,7 @@
     justify-content: space-between;
 }
 
-#FAQ .FAQ-texr {
+#FAQ .FAQ-text {
     padding-top: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -96,7 +96,7 @@
         max-width: 656px;
     }
 
-    #FAQ .FAQ-texr {
+    #FAQ .FAQ-text {
         padding-top: 26px;
         max-width: 656px;
     }
