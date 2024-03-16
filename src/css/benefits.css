@@ -1,3 +1,4 @@
+/* --------------MOBILE STYLES-------------- */
 /* --------------BUTTON-------------- */
 .order-btn {
   box-sizing: border-box;
@@ -36,7 +37,7 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 1, 5;
-  letter-spacing: -0, 125em;
+  letter-spacing: -2%;
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 32px;
@@ -76,4 +77,35 @@
   border-radius: 10px;
   width: 48px;
   height: 48px;
+}
+
+/* --------------TABLET STYLES-------------- */
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    /* row-gap: 16px; */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .benefits-item {
+    width: calc((100% - 16px) / 2);
+    max-width: 344px;
+  }
+}
+
+/* --------------DESKTOP STYLES-------------- */
+@media screen and (min-width: 1440px) {
+  .benefits-container {
+    display: flex;
+    /* width: 50%; 
+    float: left; */
+    /* justify-content: space-between; */
+  }
+  .benefits-title {
+    width: 100%;
+  }
 }
