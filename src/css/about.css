@@ -36,3 +36,28 @@
     width: 100%;
   }
 }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-section,
+.image-section {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* Tablet */
+  .text-section,
+  .image-section {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+  .text-section,
+  .image-section {
+    width: 50%;
+  }
+}
