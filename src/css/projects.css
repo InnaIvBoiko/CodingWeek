@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+/*#one {
+  display: block;
+}
+#two {
+  display: none;
+}
+#three {
+  display: none;
+}
+*/
 .projects-content {
   background: #fafafa;
   border-radius: 24px 24px 0 0;
@@ -63,8 +76,16 @@
   border-radius: 0 0 24px 24px;
   width: 343px;
   height: 395px;
+  padding: 100px 16px;
+
   background: #242527;
 }
+
+.project-container-img-pict {
+  width: 311px;
+  height: 195px;
+}
+
 .containet-projects-button {
   display: flex;
   gap: 12px;
@@ -100,6 +121,7 @@
   .project-content-tech-list {
     box-sizing: border-box;
     width: 304px;
+    height: 55px;
     margin-bottom: 164px;
   }
   .project-content-tech-item {
@@ -108,8 +130,9 @@
   }
   .project-container-title {
     font-weight: 700;
+    line-height: 1em;
     font-size: 44px;
-    width: 545px;
+    width: 494px;
     height: 132px;
   }
 
@@ -117,7 +140,7 @@
     font-weight: 700;
     font-size: 16px;
     letter-spacing: -0.02em;
-    padding: 18px 50px;
+    padding: 18px 44px;
     width: 171px;
     height: 55px;
   }
@@ -125,17 +148,26 @@
   .project-container-img {
     width: 704px;
     height: 625px;
+    padding: 120px 45px;
   }
+  .project-container-img-pict {
+    width: 614px;
+    height: 385px;
+  }
+
   .containet-projects-button {
     display: flex;
-    gap: 12px;
-    width: 116px;
+    width: 156px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;
   }
+  .containet-projects-button:last-child {
+    gap: 20px;
+  }
   .projects-button {
     padding: 18px;
+    gap: 20px;
     width: 68px;
     height: 68px;
   }
@@ -145,4 +177,29 @@
 }
 
 @media screen and (min-width: 1140px) {
+  .projects-container-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .projects-content {
+    border-radius: 24px 0 0 24px;
+    width: 688px;
+
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-bottom: 64px;
+    margin-bottom: 0;
+  }
+
+  .project-container-img {
+    border-radius: 0 24px 24px 0;
+    width: 688px;
+    padding: 120px 37px;
+  }
+
+  .project-container-img-pict {
+    width: 614px;
+    height: 385px;
+  }
 }
