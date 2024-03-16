@@ -1,9 +1,12 @@
+.hero-section {
+  padding-top: 281px;
+}
+
 .hero-title {
   font-size: 50px;
   font-weight: 500;
   line-height: 50px;
   letter-spacing: -0.03em;
-  margin-top: 281px;
   margin-bottom: 212px;
 }
 
@@ -36,15 +39,18 @@
   cursor: pointer;
 }
 
+@media screen and (min-resolution: 19dpi) {
+}
+
 @media screen and (min-width: 768px) {
   section {
     padding-bottom: 64px;
+    padding-top: 300px;
   }
 
   .hero-title {
     font-size: 90px;
     line-height: 90px;
-    margin-top: 300px;
     margin-bottom: 187px;
   }
 
@@ -67,9 +73,9 @@
 @media screen and (min-width: 1440px) {
   section {
     padding-bottom: 96px;
+    padding-top: 290px;
   }
   .hero-title {
-    margin-top: 290px;
     margin-bottom: 250px;
     width: 1084px;
     margin-left: auto;
