@@ -1,0 +1,72 @@
+.title-covers {
+  display: none;
+}
+.content-covers {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+  background-image: url(../img/covers/bg-covers/bg-covers-mob.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+@media (min-resolution: 192dpi),
+  screen and (min-resolution: 2ddpx),
+  screen and (min-device-pixel-ratio: 2) {
+  .content-covers {
+    background-image: url(../img/covers/bg-covers/bg-covers-mob@2x.png);
+  }
+}
+
+.marquee {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+  font-family: 'Pridi', sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.marquee__inner {
+  /* height: calc(508px / 3); */
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+.img-covers {
+  max-width: 282px;
+  height: 162px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
