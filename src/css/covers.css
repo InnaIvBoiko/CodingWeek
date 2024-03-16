@@ -1,3 +1,5 @@
+/* < ============== COVERS ============== > */
+
 .title-covers {
   display: none;
 }
@@ -26,14 +28,9 @@
   right: -800px;
   left: 0;
   overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
 }
 
 .marquee__inner {
-  /* height: calc(508px / 3); */
   display: flex;
   gap: 32px;
   margin-bottom: 32px;
@@ -41,8 +38,6 @@
 }
 
 .marquee__line {
-  flex-shrink: 0;
-  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,4 +64,47 @@
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+/* < ============== COVERS MEDIA ============== > */
+
+@media screen and (min-width: 768px) {
+  .content-covers {
+    height: 960px;
+    background-image: url(../img/covers/bg-covers/bg-covers-tab.png);
+    max-width: 768px;
+  }
+
+  @media (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .content-covers {
+      background-image: url(../img/covers/bg-covers/bg-covers-tab@2x.png);
+    }
+  }
+
+  .marquee__inner {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .img-covers {
+    max-width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content-covers {
+    background-image: url(../img/covers/bg-covers/bg-covers-desk.png);
+    max-width: 1440px;
+  }
+
+  @media (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .content-covers {
+      background-image: url(../img/covers/bg-covers/bg-covers-desk@2x.png);
+    }
+  }
 }
