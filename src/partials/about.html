@@ -1,51 +1,117 @@
-<!--text-section-->
-<div class="container-about">
-  <div class="text-section">
-    <p>
-      I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE IMPRESSIVE AND FUNCTIONAL
-      WEBSITES THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.
-    </p>
-  </div>
-  <div class="image-section">
-    <img src="/src/img/dekstop/hero@2x.png" alt="Person working on a laptop" />
-  </div>
-</div>
-
-<!--about-section-->
 <section id="about">
-  <div class="about-section">
-    <h2 style="display: none">About Me</h2>
-    <h2>
-      <span class="arrow" onclick="toggleSection('about')">About Me ↓</span>
-    </h2>
-    <div id="about-content" style="display: none">
-      <p>
-        I am Lloyd Jefferson, a talented programmer with extensive expertise in
-        software development. I have an understanding of different programming
-        languages and technologies, always ready to improve my skills. I have
-        the highest ethical standards and look for unconventional creative
-        solutions to problems. I always follow the latest trends so that I am
-        able to effectively solve even the most difficult tasks encountered on
-        the way.
-      </p>
+  <div class="container about-container">
+    <div class="about-foto">
+      <h2 class="about-title">
+        I work with people all over the world to create impressive and
+        <span class="text-accent-red">functional</span>
+        <span class="text-accent-grey">websites</span>
+        that reflect each client's unique personality.
+      </h2>
+      <img
+        class="about-hero-img"
+        src="./img/mobile/hero@2x.png"
+        alt="Person working on a laptop"
+      />
     </div>
-    <h3>Role <span class="arrow" onclick="toggleSection('role')">↓</span></h3>
-    <div id="role-content" style="display: none">
-      <p>Frontend development, Headless CMS/Wordpress, Blender(Beta)</p>
+    <div class="about-accordion">
+      <ul class="about-list accordion-container">
+        <li class="about-item ac">
+          <div class="about-item-container ac-header">
+            <h3 class="about-item-headline">About me</h3>
+            <button class="about-arrow-btn ac-trigger" type="button">
+              <svg
+                class="about-arrow-icon"
+                width="20"
+                height="20"
+                aria-label="arrow up icon"
+              >
+                <use href="/img/sprite.svg#icon-down-btn"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel">
+            <p class="about-text ac-text">
+              I am Lloyd Jefferson, a talented programmer with extensive
+              expertise in software development. I have an understanding of
+              different programming languages ​​and technologies, always ready
+              to improve my skills. I always follow the latest trends and look
+              for unconventional, creative solutions to problems. I have a high
+              level of analytical skills and am able to effectively solve even
+              the most difficult tasks encountered on the way.
+            </p>
+            <p class="about-text ac-text">
+              Able to work both independently and in a team. I can effectively
+              cooperate with colleagues, exchanging ideas and finding optimal
+              solutions. Professional maturity allows you to calmly cope with
+              challenges and stressful situations, while maintaining a high
+              quality of work. I am always looking for opportunities for
+              self-improvement. I actively study new technologies and practices
+              to stay abreast of the latest innovations. I have a strong
+              understanding of various programming languages, frameworks and
+              architectural concepts that allow me to create efficient and
+              scalable software.
+            </p>
+          </div>
+        </li>
+        <li class="about-item ac">
+          <div class="about-item-container ac-header">
+            <h3 class="about-item-headline">role</h3>
+            <button class="about-arrow-btn ac-trigger" type="button">
+              <svg
+                class="about-arrow-icon"
+                width="20"
+                height="20"
+                aria-label="arrow up icon"
+              >
+                <use href="/img/sprite.svg#icon-down-btn"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel">
+            <p class="about-text ac-text">Frontend development</p>
+            <p class="about-text ac-text">HeadlessCMS,Wordpress</p>
+            <p class="about-text ac-text">Blender(enjoy)</p>
+          </div>
+        </li>
+        <li class="about-item ac">
+          <div class="about-item-container ac-header">
+            <h3 class="about-item-headline">education</h3>
+            <button class="about-arrow-btn ac-trigger" type="button">
+              <svg
+                class="about-arrow-icon"
+                width="20"
+                height="20"
+                aria-label="arrow up icon"
+              >
+                <use href="/img/sprite.svg#icon-down-btn"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="ac-panel">
+            <p class="about-text ac-text">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+            <p class="about-text ac-text">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+            <p class="about-text ac-text">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
-    <h3>
-      Education
-      <span class="arrow" onclick="toggleSection('education')">↓</span>
-    </h3>
-    <div id="education-content" style="display: none">
-      <p>
-        2018 - 2019 / Frontend Development Diploma , GoIT IT School New York
-      </p>
-      <p>
-        2019 - 2020 / Advanced Web Development Certificate , GoIT IT School New
-        York
-      </p>
-      <p>2020 - 2022 / Advanced Blender Animation Technique , Udemy</p>
+    <div class="about-skills">
+      <ul class="about-skills-list">
+        <li class="about-skills-item is-active">HTML/CSS</li>
+        <li class="about-skills-item">JavaScript</li>
+        <li class="about-skills-item">React</li>
+        <li class="about-skills-item">Node. js</li>
+        <li class="about-skills-item">React Native</li>
+        <li class="about-skills-item">Soft skills</li>
+      </ul>
     </div>
   </div>
 </section>

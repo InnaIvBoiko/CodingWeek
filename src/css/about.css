@@ -1,57 +1,201 @@
-.about-section {
-  width: 80%;
-  margin: auto;
-}
-.about-section h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-.about-section p {
-  text-align: justify;
-  line-height: 1.6;
-}
-.about-section h3 {
-  font-size: 1.5em;
-  margin-top: 30px;
-}
-.arrow {
-  cursor: pointer;
-}
-/* Стилі для планшетної версії */
-@media (max-width: 768px) {
-  .about-section {
-    width: 90%;
-  }
-}
-/* Стилі для мобільної версії */
-@media (max-width: 480px) {
-  .about-section {
-    width: 100%;
-  }
-}
-.container-about {
+.about-container {
   display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-foto {
+  display: flex;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
-.text-section,
-.image-section {
-  width: 100%;
+.about-title {
+  border-radius: 24px;
+  max-width: 343px;
+  height: 500px;
+  background-color: #242527;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding: 32px;
 }
 
-@media (min-width: 768px) {
-  /* Tablet */
-  .text-section,
-  .image-section {
-    width: 50%;
+.text-accent-red {
+  color: #ed3b44;
+}
+
+.text-accent-grey {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-hero-img {
+  border-radius: 24px;
+  width: 343px;
+  height: 500px;
+}
+
+.about-accordion {
+  max-width: 342px;
+}
+
+.about-item .about-arrow-icon {
+  transition: transform 300ms;
+}
+
+.about-item.is-active .about-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.about-headline {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-item {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fafafa;
+
+  border: none;
+  border-top: 1px solid rgba(250, 250, 250, 0.6);
+  background-color: transparent;
+  margin-top: 0;
+}
+
+.about-item:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+.about-item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  padding-top: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.about-arrow-btn {
+  margin-left: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 7px;
+  width: 34px;
+  height: 34px;
+}
+
+.about-arrow-btn.ac-trigger::after {
+  content: none;
+}
+
+.about-item-container {
+  background-color: transparent;
+}
+
+.about-skills-list {
+  /* display: flex; */
+}
+
+.about-skills-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.about-skills-item.is-active {
+  background-color: #ed3b44;
+}
+
+/* =============== TABLET ===============*/
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    gap: 64px;
+  }
+
+  .about-title {
+    max-width: 704px;
+    height: 700px;
+    font-size: 38px;
+    line-height: 1.05;
+    padding: 64px;
+  }
+
+  .about-hero-img {
+    width: 704px;
+    height: 700px;
+  }
+
+  .about-accordion {
+    max-width: 704px;
+  }
+
+  .about-item {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .about-item-headline {
+    max-width: 656px;
+  }
+
+  .about-text {
+    padding-top: 26px;
+    max-width: 656px;
   }
 }
 
-@media (min-width: 1024px) {
-  /* Desktop */
-  .text-section,
-  .image-section {
-    width: 50%;
+/* =============== DESKTOP ===============*/
+
+@media screen and (min-width: 1440px) {
+  .about-container {
+    gap: 96px;
+  }
+
+  .about-foto {
+    flex-wrap: nowrap;
+  }
+
+  .about-title {
+    max-width: 680px;
+  }
+
+  .about-hero-img {
+    width: 680px;
+  }
+
+  .about-accordion {
+    max-width: 1376px;
+  }
+  .ac-panel {
+    padding-left: 658px;
   }
 }
