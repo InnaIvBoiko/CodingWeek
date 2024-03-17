@@ -4,7 +4,7 @@
 // import covers from "./js/covers";
 import FAQ from "./js/faq";
 // import hero from "./js/hero";
-// import projects from "./js/projects";
+import "./js/projects";
 // import header from "./js/header";
 // import footer from "./js/footer";
 // import reviews from "./js/reviews";
