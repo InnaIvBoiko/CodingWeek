@@ -9,7 +9,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-  margin-left: 16px;
+  padding-left: 16px;
   margin-bottom: 32px;
 }
 
@@ -119,7 +119,7 @@
 
 @media screen and (min-width: 768px) {
   .projects-section-title {
-    margin-left: 44px;
+    padding-left: 44px;
   }
 
   .projects-content {
@@ -197,7 +197,7 @@
 
 @media screen and (min-width: 1140px) {
   .projects-section-title {
-    margin-left: 32px;
+    padding-left: 32px;
   }
 
   .projects-container-item {
