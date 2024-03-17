@@ -1,4 +1,8 @@
-import Swiper from 'https://unpkg.com/swiper/swiper-bundle.min.js';
+// Import Swiper styles
+import 'swiper/swiper-bundle.css';
+
+// Import Swiper JavaScript
+import Swiper from 'swiper/swiper-bundle.min.js';
 
 // Function to toggle section visibility
 function toggleSection(id) {
@@ -23,6 +27,3 @@ const swiper = new Swiper('.swiper-container', {
   },
   loop: true,
 });
-
-import Swiper from 'swiper';
-import 'swiper/css';

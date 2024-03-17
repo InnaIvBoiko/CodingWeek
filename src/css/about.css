@@ -1,57 +1,56 @@
-.about-section {
+#hero {
   width: 80%;
   margin: auto;
 }
-.about-section h2 {
+
+#hero h1 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
-.about-section p {
+
+#about-me,
+#skills,
+#education {
+  width: 80%;
+  margin: auto;
+}
+
+#about-me h2,
+#skills h2,
+#education h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#about-me p,
+#skills ul,
+#education ul {
   text-align: justify;
   line-height: 1.6;
 }
-.about-section h3 {
-  font-size: 1.5em;
-  margin-top: 30px;
-}
+
 .arrow {
   cursor: pointer;
 }
+
 /* Стилі для планшетної версії */
 @media (max-width: 768px) {
-  .about-section {
+  #hero,
+  #about-me,
+  #skills,
+  #education {
     width: 90%;
   }
 }
+
 /* Стилі для мобільної версії */
 @media (max-width: 480px) {
-  .about-section {
+  #hero,
+  #about-me,
+  #skills,
+  #education {
     width: 100%;
-  }
-}
-.container-about {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.text-section,
-.image-section {
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  /* Tablet */
-  .text-section,
-  .image-section {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* Desktop */
-  .text-section,
-  .image-section {
-    width: 50%;
   }
 }
