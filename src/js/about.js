@@ -1,4 +1,3 @@
-// Importing Swiper JS
 import Swiper from 'https://unpkg.com/swiper/swiper-bundle.min.js';
 
 // Function to toggle section visibility
