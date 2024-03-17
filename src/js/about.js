@@ -23,3 +23,6 @@ const swiper = new Swiper('.swiper-container', {
   },
   loop: true,
 });
+
+import Swiper from 'swiper';
+import 'swiper/css';

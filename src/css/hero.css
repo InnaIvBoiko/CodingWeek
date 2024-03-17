@@ -1,0 +1,115 @@
+.hero-section {
+  padding-top: 281px;
+  background-image: url('../img/mobile/glass-effect-mob.png'),
+    url('../img/mobile/hero-bg-mob.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -0.03em;
+  margin-bottom: 212px;
+}
+
+.hero-list {
+  display: flex;
+  gap: 4px;
+}
+
+.soc-network-item {
+  height: 37px;
+  flex-grow: 0;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50px;
+  border: solid 1px rgba(250, 250, 250, 0.2);
+}
+
+.soc-network-item:not(:last-child) {
+  text-transform: uppercase;
+  width: 37px;
+}
+
+.soc-network-item:hover {
+  border: 1px solid rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('../img/mobile/glass-effect-mob@2x.png'),
+      url('../img/mobile/hero-bg-mob@2x.png');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 64px;
+    padding-top: 300px;
+    background-image: url('../img/tablet/glass-effect-tab.png'),
+      url('../img/tablet/hero-bg-tab.png');
+  }
+
+  .hero-title {
+    font-size: 90px;
+    line-height: 90px;
+    margin-bottom: 187px;
+  }
+
+  .hero-list {
+    gap: 8px;
+    justify-content: right;
+  }
+
+  .soc-network-item {
+    height: 55px;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 18px 20px;
+  }
+  .soc-network-item:not(:last-child) {
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('../img/tablet/glass-effect-tab@2x.png'),
+      url('../img/tablet/hero-bg-tab@2x.png');
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-bottom: 96px;
+    padding-top: 290px;
+    background-image: url('../img/tablet/glass-effect-tab.png'),
+      url('../img/dekstop/hero-bg.png');
+  }
+  .hero-title {
+    margin-bottom: 250px;
+    width: 1084px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .soc-network-item {
+    padding: 18px 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: url('../img/tablet/glass-effect-tab@2x.png'),
+      url('../img/dekstop/hero-bg@2x.png');
+  }
+}
