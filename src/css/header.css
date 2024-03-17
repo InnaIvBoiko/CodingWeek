@@ -1,3 +1,90 @@
 .header {
-  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  background-color: transparent;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  height: 80px;
+}
+
+.logo-text {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header-menu-btn {
+  display: none;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fafafa;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-menu-item {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.header-link-for-footer {
+  display: none;
+  border-radius: 60px;
+  padding: 18px 24px;
+  width: 163px;
+  height: 55px;
+  background-color: #ed3b44;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.header-burger-btn {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-burger-btn {
+    display: none;
+  }
+
+  .header-menu-btn {
+    display: flex;
+  }
+
+  .header-link-for-footer {
+    display: block;
+  }
 }
