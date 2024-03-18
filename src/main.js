@@ -4,10 +4,10 @@ import "./js/about";
 // import covers from "./js/covers";
 import "./js/faq";
 // import hero from "./js/hero";
-// import projects from "./js/projects";
+import "./js/projects";
 // import header from "./js/header";
 // import footer from "./js/footer";
-import "./js/reviews";
+// import "./js/reviews";
 // libraries
 // import iziToast from "izitoast";
 // import "izitoast/dist/css/iziToast.min.css";
