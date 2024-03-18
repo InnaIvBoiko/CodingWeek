@@ -88,7 +88,7 @@
 }
 
 #about .about-text {
-    color: #fafafa;
+  color: #fafafa;
   padding-top: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -138,7 +138,7 @@
 /* =============== TABLET ===============*/
 
 @media screen and (min-width: 768px) {
-    #about .about-container {
+  #about .about-container {
     gap: 64px;
   }
 
@@ -177,7 +177,7 @@
 /* =============== DESKTOP ===============*/
 
 @media screen and (min-width: 1440px) {
-    #about .about-container {
+  #about .about-container {
     gap: 96px;
   }
 
