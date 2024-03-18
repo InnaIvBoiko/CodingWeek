@@ -30,18 +30,17 @@ swiper.on('slideChange', function () {
    
     if (swiper.isBeginning) {
         previosBtn.disabled = true;
-        previosBtn.style.borderColor ='#fafafa33';
+        previosBtn.style.borderColor = '#fafafa33';
     } else {
         previosBtn.disabled = false;
-        previosBtn.style.borderColor ='#fafafa80';
-        
+        previosBtn.style.borderColor = '#fafafa80';
     }
     
     if (swiper.isEnd) {
         nextBtn.disabled = true;
         nextBtn.style.borderColor = '#fafafa33';
     } else {
-      nextBtn.disabled = false;
-      nextBtn.style.borderColor ='#fafafa80';
+        nextBtn.disabled = false;
+        nextBtn.style.borderColor = '#fafafa80';
     }
 });

@@ -45,6 +45,7 @@ swiper.on('slideChange', function () {
         previosBtn.disabled = false;
         previosBtn.style.borderColor ='#fafafa80';
         
+
     }
     
     if (swiper.isEnd) {
@@ -55,3 +56,4 @@ swiper.on('slideChange', function () {
       nextBtn.style.borderColor ='#fafafa80';
     }
 });
+

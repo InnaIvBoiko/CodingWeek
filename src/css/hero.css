@@ -1,4 +1,4 @@
-#hero-section {
+.hero-section {
   position: relative;
   padding-top: 281px;
   background-image: url('../img/mobile/glass-effect-mob.png'),
@@ -7,6 +7,9 @@
   background-position: center;
   background-repeat: no-repeat;
   max-width: 375px;
+  margin-bottom: 64px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title {
@@ -55,7 +58,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #hero-section {
+  .hero-section {
     padding-bottom: 64px;
     padding-top: 300px;
     background-image: url('../img/tablet/glass-effect-tab.png'),
@@ -86,14 +89,14 @@
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  #hero-section {
+  .hero-section {
     background-image: url('../img/tablet/glass-effect-tab@2x.png'),
       url('../img/tablet/hero-bg-tab@2x.png');
   }
 }
 
 @media screen and (min-width: 1440px) {
-  #hero-section {
+  .hero-section {
     padding-bottom: 96px;
     padding-top: 290px;
     background-image: url('../img/tablet/glass-effect-tab.png'),
@@ -113,7 +116,7 @@
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-  #hero-section {
+  .hero-section {
     background-image: url('../img/tablet/glass-effect-tab@2x.png'),
       url('../img/dekstop/hero-bg@2x.png');
   }

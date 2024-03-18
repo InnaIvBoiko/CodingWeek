@@ -71,7 +71,7 @@
     height: 34px;
 }
 
-#FAQ .FAQ-arrow-btn.ac-trigger::after {
+#FAQ .FAQ-arrow-btn::after {
     content: none;
 }
 
