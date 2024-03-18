@@ -7,6 +7,8 @@
   position: relative;
   height: 508px;
   overflow: hidden;
+  backdrop-filter: blur(30px);
+  background-color: rgba(217, 217, 217, 0.04);
   background-image: url(../img/covers/bg-covers/bg-covers-mob.png);
   background-size: cover;
   background-position: 50% 50%;

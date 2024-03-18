@@ -9,7 +9,16 @@
       </h2>
       <img
         class="about-hero-img"
-        src="./img/mobile/hero@2x.png"
+        srcset="
+          ./img/mobile/hero.png      343w,
+          ./img/mobile/hero@2x.png   686w,
+          ./img/tablet/hero.png      704w,
+          ./img/tablet/hero@2x.png  1408w,
+          ./img/dekstop/hero.png     680w,
+          ./img/dekstop/hero@2x.png 1360w
+        "
+        sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px,  (max-width: 767px) 343px "
+        src="./img/mobile/hero.png"
         alt="Person working on a laptop"
       />
     </div>
