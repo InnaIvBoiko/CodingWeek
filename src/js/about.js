@@ -1,11 +1,12 @@
+"use strict"
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-const aboutAccordion = new Accordion('.accordion-container', {
+const  aboutAccordion = new Accordion('.accordion-container', {
   showMultiple: true,
 });
 
-export default aboutAccordion;
+// export default aboutAccordion;
 
 // // Import Swiper styles
 // import 'swiper/swiper-bundle.css';
