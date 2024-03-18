@@ -6,7 +6,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 // ================SWIPER=================
 
-const swiperAbout = new Swiper('.swiper-about', {
+const swiperAbout = new Swiper('.about-skills', {
   loop: true,
   speed: 750,
 
