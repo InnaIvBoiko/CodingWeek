@@ -2,82 +2,58 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import axios from 'axios';
 
-const galleryOfReviews = document.querySelector('.swiperRev-wrapper')
-const previosBtn = document.querySelector('.left-button');
-const nextBtn = document.querySelector('.right-button');
-let swiper;
-
-
-previosBtn.disabled = true;
-previosBtn.addEventListener('click', prev); 
-nextBtn.addEventListener('click', next);
+const previosBtn = document.querySelector('.reviews-left-button');
+const nextBtn = document.querySelector('.reviews-right-button');
+const swiper = new Swiper('.reviews-swiper', {
+    spaceBetween: 16,
+    navigation: true,
+    a11y: true,
+    allowTouchMove: true,
+    centeredSlides: true,
+    keyboard: true,
+    mousewheel: true,
+    nested: true,
+});
 
 async function getReviews() {
-   try {
+    try {
         const response = await axios.get("https://portfolio-js.b.goit.study/api/reviews");
-        renderData(response);
+        renderData(response.data); 
     } catch (error) {
         console.error(error.message);
     }
 }
 
-function renderData(response) {
-    const data = response.data;
-        const reviewData = data.map(({ author, avatar_url, review }) => {
-        return `<div class="card swiperRev-slide">
-                        <img class ="review-author-photo" src="${avatar_url}" alt="Photo" />
-                        <h3 class="review-author-name">${author}</h3>
-                        <p class="review-content">${review}</p>
-                    </div>`
-    }).join('');
- 
-    galleryOfReviews.innerHTML = reviewData;
-    swiperSlide();
-}    
+previosBtn.disabled = true;
 
+previosBtn.addEventListener('click', prev); 
+nextBtn.addEventListener('click', next);
 
-function swiperSlide(){
-    
-    swiper = new Swiper('.swiperRev', {
-        spaceBetween: 100,
-        navigation: true,
-        a11y: true,
-        allowTouchMove: true,
-        centeredSlides: true,
-        keyboard: true,
-        mousewheel: true,
-        nested: true,
-        slidesPerGroupAuto: true,
-    })
+function prev() {
+    swiper.slidePrev()
+};
+function next() {
+    swiper.slideNext()
+};
 
-    swiper.on('slideChange', function () {
+swiper.on('slideChange', function () {
    
     if (swiper.isBeginning) {
         previosBtn.disabled = true;
-        previosBtn.style.borderColor = '#fafafa33';
+        previosBtn.style.borderColor ='#fafafa33';
     } else {
         previosBtn.disabled = false;
-        previosBtn.style.borderColor = '#fafafa80';
+        previosBtn.style.borderColor ='#fafafa80';
+        
+
     }
     
     if (swiper.isEnd) {
         nextBtn.disabled = true;
         nextBtn.style.borderColor = '#fafafa33';
     } else {
-        nextBtn.disabled = false;
-        nextBtn.style.borderColor = '#fafafa80';
+      nextBtn.disabled = false;
+      nextBtn.style.borderColor ='#fafafa80';
     }
 });
 
-};
-
- function prev() {
-    console.log('prev')
-    swiper.slidePrev()
-};
-function next() {
-    console.log('next')
-  swiper.slideNext()
-};
-
-getReviews();

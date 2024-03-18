@@ -16,9 +16,6 @@ const swiper = new Swiper('.swiper', {
 });
 previosBtn.disabled = true;
 
-
-
-
 previosBtn.addEventListener('click', prev); 
 nextBtn.addEventListener('click', next);
 

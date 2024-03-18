@@ -1,27 +1,19 @@
-.container {
-  max-width: 375px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-.review-author-photo {
-  width: 48px;
-  height: 48px;
-}
-.cards-container {
-  display: flex;
-  flex-direction: column;
-}
 
-.card {
-  margin-bottom: 16px;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 20px;
-  padding: 32px 24px;
-  width: 343px;
-  height: auto;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+.swiper-slide.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  }
+
+.swiper-slide.card {
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 20px;
+padding: 32px 24px;
+width: 343px !important;
+height: 302px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.6);
 }
 
 .title {
@@ -77,35 +69,9 @@
     max-width: 768px;
   }
 
-  .reviews-button {
-    padding: 18px;
-    gap: 20px;
-    width: 68px;
-    height: 68px;
-  }
-
-  .containet-reviews-button {
-    gap: 20px;
-    width: 160px;
-    height: 68px;
-  }
-
-  .cards-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .card {
     width: 344px;
   }
-}
-
-.containet-reviews-button {
-  width: 156px;
-}
-.containet-reviews-button:last-child {
-  gap: 20px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -118,5 +84,12 @@
   }
   .card {
     width: 332px;
+  }
+
+  .swiper-slide.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  
   }
 }
