@@ -1,12 +1,21 @@
 .footer-title-field {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-bottom: 64px;
+}
+
+.footer-title-item {
+  flex: 0 0 calc(30%);
+}
+
+.footer-title-item:nth-child(n + 4) {
+  flex: 0 0 100%;
 }
 
 .footer-title-field img {
   width: 44px;
   height: 44px;
-  margin-right: 8px;
 }
 
 .footer-form {
@@ -18,8 +27,7 @@
 .input-field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
-  gap: 16px;
+  margin-bottom: 64px;
 }
 
 .link-field {
@@ -48,11 +56,10 @@
   font-weight: 500;
   font-size: 16px;
   color: #fafafa;
-  margin-bottom: 64px;
 }
 
 .footer-input,
-textarea {
+.footer-textarea {
   border: none;
   border-bottom: 1px solid #fafafa33;
   background: transparent;
@@ -63,6 +70,15 @@ textarea {
   height: 44px;
   overflow: hidden;
   resize: none;
+}
+
+.footer-label {
+  height: 44px;
+  margin-bottom: 16px;
+}
+
+.input-field .footer-label:nth-child(2) {
+  margin-bottom: 32px;
 }
 
 .footer-input::placeholder {
@@ -92,7 +108,80 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .footer-title-item {
+    flex: 0 0 calc(15%);
+  }
+
+  .footer-title {
+    font-size: 64px;
+  }
+
+  .footer-title-field img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer-title-field {
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  .footer-send-btn {
+    margin-bottom: 0px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .input-field {
+    flex-direction: row;
+    margin-bottom: 0px;
+    align-items: center;
+    gap: 32px;
+    width: auto;
+  }
+
+  .form-field {
+    margin-bottom: 18px;
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-input {
+    width: 245px;
+  }
+
+  .footer-label {
+    margin-bottom: 0;
+  }
+
+  .input-field .footer-label:nth-child(2) {
+    margin: 0;
+  }
 }
 
-@media screen and (min-width: 1228px) {
+@media screen and (min-width: 1440px) {
+  .footer-title-item {
+    flex: 0 0 calc(7.5%);
+  }
+
+  .footer-input {
+    width: 390px;
+  }
+
+  .input-field {
+    gap: 0;
+  }
+
+  .footer-label {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .input-field .footer-label:nth-child(2) {
+    margin-right: 68px;
+  }
+
+  .container.footer-container {
+    width: max-content;
+  }
 }

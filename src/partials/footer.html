@@ -1,5 +1,5 @@
 <footer>
-  <section class="section footer-section">
+  <section class="section footer-section" id="footer">
     <div class="container footer-container">
       <div class="footer-title-field">
         <img
@@ -8,36 +8,38 @@
           src="./img/dekstop/logo@2x.png"
           alt="logo"
         />
-        <h2 class="footer-title">
-          Let’s
-          <span class="footer-title-accent"> work</span>
-          <br />
-          together
-        </h2>
+        
+        <h2 class="footer-title footer-title-item">Let’s</h2>
+        <h2 class="footer-title footer-title-accent footer-title-item">work</h2>
+        <h2 class="footer-title footer-title-item">together</h2>
+
       </div>
       <form class="form-field">
         <div class="input-field">
-          <label for="email" class="footer-label"></label>
-          <input
-            placeholder="clients@gmail.com"
-            type="email"
-            id="email"
-            name="email"
-            required
-            class="footer-input"
-          />
-          <label for="message" class="footer-label"></label>
-          <textarea
-            placeholder="comments"
-            id="message"
-            name="message"
-            required
-            class="footer-input"
-          ></textarea>
+          <label for="email" class="footer-label">
+            <input
+              placeholder="clients@gmail.com"
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="footer-input"
+            />
+          </label>
+
+          <label for="message" class="footer-label">
+            <textarea
+              placeholder="comments"
+              id="message"
+              name="message"
+              required
+              class="footer-input footer-textarea"
+            ></textarea>
+          </label>
+          <button type="submit" itemprop="action" class="footer-send-btn">
+            Send
+          </button>
         </div>
-        <button type="submit" itemprop="action" class="footer-send-btn">
-          Send
-        </button>
       </form>
       <div class="link-field">
         <a
