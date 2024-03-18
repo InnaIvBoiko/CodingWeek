@@ -1,10 +1,10 @@
 // parts
-import about from './js/about';
+// import about from "./js/about";
 // import benefits from "./js/benefits";
 // import covers from "./js/covers";
-import FAQ from './js/faq';
+import FAQ from "./js/faq";
 // import hero from "./js/hero";
-import './js/projects';
+// import projects from "./js/projects";
 // import header from "./js/header";
 // import footer from "./js/footer";
 import "./js/reviews";
