@@ -1,8 +1,11 @@
-<section class="projects">
-    <div class="projects-container container">
-        <ul class="projects-container-list">
-            <li class="projects-container-item">
-
+<section id ="projects" class = "projects">
+    
+    <div class="projects-container container swiper">
+        <h2 class="projects-section-title">projects</h2>
+        <ul class="projects-container-list swiper-wrapper">
+          <div class="swiper-slide">
+             <li class="projects-container-item">
+             
                 <div class="projects-content">
                     <ul class="project-content-tech-list">
                         <li class="project-content-tech-item">#react</li>
@@ -11,15 +14,15 @@
                         <li class="project-content-tech-item">#git</li>
                     </ul>
 
-                    <h2 class="project-container-title">
+                    <h3 class="project-container-title">
                         Programming Across Borders: Ideas, Technologies, Innovations
-                    </h2>
+                    </h3>
                     <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
                         See project
                     </a>
                 </div>
                 <div class="project-container-img">
-                    <img class="project-container-img" srcset="
+                    <img class="project-container-img-pict" srcset="
                                             ./img/mobile/book-mobile.png              311w,
                                             ./img/mobile/book-mobile@2x.png           622w,
                                             ./img/tablet/book-tablet.png              614w,    
@@ -29,7 +32,9 @@
                         alt="book-mobile-photo">
                 </div>
             </li>
-            <li class="projects-container-item">
+          </div>
+          <div class="swiper-slide">
+            <li  class="projects-container-item">
 
                 <div class="projects-content">
                                     <ul class="project-content-tech-list">
@@ -39,15 +44,15 @@
                                         <li class="project-content-tech-item">#git</li>
                                     </ul>
 
-                                    <h2 class="project-container-title">
+                                    <h3 class="project-container-title">
                                         Programming Across Borders: Ideas, Technologies, Innovations
-                                    </h2>
+                                    </h3>
                                     <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
                                         See project
                                     </a>
                 </div>
                 <div class="project-container-img">
-                    <img class="project-container-img" srcset="
+                    <img class="project-container-img-pict" srcset="
                                             ./img/mobile/petlove-mobile.png              311w,
                                             ./img/mobile/petlove-mobile@2x.png           622w,
                                             ./img/tablet/petlove-tablet.png              614w,    
@@ -57,6 +62,8 @@
                         alt="petlove-mobile-photo">
                 </div>
             </li>
+          </div>
+          <div class="swiper-slide">
             <li class="projects-container-item">
 
                 <div class="projects-content">
@@ -67,15 +74,15 @@
                         <li class="project-content-tech-item">#git</li>
                     </ul>
 
-                    <h2 class="project-container-title">
+                    <h3 class="project-container-title">
                         Programming Across Borders: Ideas, Technologies, Innovations
-                    </h2>
+                    </h3>
                     <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
                         See project
                     </a>
                 </div>
                 <div class="project-container-img">
-                    <img class="project-container-img"  srcset="
+                    <img class="project-container-img-pict"  srcset="
                                             ./img/mobile/form-mobile.png              311w,
                                             ./img/mobile/form-mobile@2x.png           622w,
                                             ./img/tablet/form-tablet.png              614w,    
@@ -86,26 +93,24 @@
 
                 </div>
             </li>
+          </div>
         </ul>
         <div class="containet-projects-button">
-                <button class="projects-button" type="button">
-                    <svg 
-                    class="projects-button-icon" 
-                    width="24" 
-                    height="24" 
-                    aria-label="arrow narrow left">
-                        <use href="./img/sprite.svg#icon-arrow-narrow-right-icon"></use>
+            
+            <div class="swiper-button-prev">
+                <button class="projects-button left-button" type="button">
+                    <svg class="projects-button-icon left-button-icon" width="24" height="24" aria-label="arrow narrow left">
+                        <use  href="./img/sprite.svg#icon-arrow-narrow-right-icon" ></use>
                     </svg>
                 </button>
-                <button class="projects-button" type="button">
-                    <svg 
-                    class="projects-button-icon" 
-                    width="24" 
-                    height="24" 
-                    aria-label="arrow narrow right">
+            </div>
+            <div class="swiper-button-next">
+                <button class="projects-button right-button" type="button">
+                    <svg class="projects-button-icon right-button-icon" width="24" height="24" aria-label="arrow narrow right">
                         <use href="./img/sprite.svg#icon-arrow-narrow-left-icon"></use>
                     </svg>
                 </button>
+            </div>
         </div>
     </div>
 </section>

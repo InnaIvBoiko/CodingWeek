@@ -1,0 +1,110 @@
+/* < ============== COVERS ============== > */
+
+.title-covers {
+  display: none;
+}
+.content-covers {
+  position: relative;
+  height: 508px;
+  overflow: hidden;
+  background-image: url(../img/covers/bg-covers/bg-covers-mob.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+@media (min-resolution: 192dpi),
+  screen and (min-resolution: 2ddpx),
+  screen and (min-device-pixel-ratio: 2) {
+  .content-covers {
+    background-image: url(../img/covers/bg-covers/bg-covers-mob@2x.png);
+  }
+}
+
+.marquee {
+  position: absolute;
+  right: -800px;
+  left: 0;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  transform: rotate(16deg);
+}
+
+.marquee__line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+.img-covers {
+  max-width: 282px;
+  height: 162px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/* < ============== COVERS MEDIA ============== > */
+
+@media screen and (min-width: 768px) {
+  .content-covers {
+    height: 960px;
+    background-image: url(../img/covers/bg-covers/bg-covers-tab.png);
+    max-width: 768px;
+  }
+
+  @media (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .content-covers {
+      background-image: url(../img/covers/bg-covers/bg-covers-tab@2x.png);
+    }
+  }
+
+  .marquee__inner {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .img-covers {
+    max-width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content-covers {
+    background-image: url(../img/covers/bg-covers/bg-covers-desk.png);
+    max-width: 1440px;
+  }
+
+  @media (min-resolution: 192dpi),
+    screen and (min-resolution: 2ddpx),
+    screen and (min-device-pixel-ratio: 2) {
+    .content-covers {
+      background-image: url(../img/covers/bg-covers/bg-covers-desk@2x.png);
+    }
+  }
+}
