@@ -1,10 +1,11 @@
 import Swiper from 'swiper';
 import 'swiper/css';
+import axios from 'axios';
 
-const previosBtn = document.querySelector('.left-button');
-const nextBtn = document.querySelector('.right-button');
-const swiper = new Swiper('.swiper', {
-    spaceBetween: 100,
+const previosBtn = document.querySelector('.reviews-left-button');
+const nextBtn = document.querySelector('.reviews-right-button');
+const swiper = new Swiper('.reviews-swiper', {
+    spaceBetween: 16,
     navigation: true,
     a11y: true,
     allowTouchMove: true,
@@ -12,8 +13,17 @@ const swiper = new Swiper('.swiper', {
     keyboard: true,
     mousewheel: true,
     nested: true,
-
 });
+
+async function getReviews() {
+    try {
+        const response = await axios.get("https://portfolio-js.b.goit.study/api/reviews");
+        renderData(response.data); 
+    } catch (error) {
+        console.error(error.message);
+    }
+}
+
 previosBtn.disabled = true;
 
 previosBtn.addEventListener('click', prev); 
