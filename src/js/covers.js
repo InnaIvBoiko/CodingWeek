@@ -1,32 +1,17 @@
-const sectionCovers = document.querySelector('#covers');
-const animationStrings = document.querySelectorAll
+const coversWrap = document.querySelector('.marquee');
 
-// const styleMarqueeLine = `
-// <style class="text-css" type="text/css">
-// @keyframes marqueeLine {
-//   from {
-//     transform: translateX(-20%);
-//   }
-//   to {
-//     transform: translateX(-180%);
-//       }
-// </style>
-// `;
-
-window.addEventListener('scroll', () => {
-    const result = isInViewport(sectionCovers);
-    if (result) {
-        sectionCovers.insertAdjacentHTML('beforeend', styleMarqueeLine);
-    } else {
-        sectionCovers.removeChild('.text-css');
-    }
-    console.log(result);
+const forExport = window.addEventListener('scroll', () => {
+  const result = isInViewport(coversWrap);
+  if (result) {
+    coversWrap.animate([{ transform: 'translateX(-5%)' },
+      { transform: 'translateX(-35%)' }],
+      { easing: 'ease-in-out', duration: 5000, iterations: 'Infinity' });
+  };
 });
 
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   const html = document.documentElement;
-    console.log('ok')
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
@@ -34,3 +19,5 @@ function isInViewport(element) {
     rect.right <= (window.innerWidth || html.clientWidth)
   );
 };
+
+export default forExport;
