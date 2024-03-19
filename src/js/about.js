@@ -1,10 +1,17 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-// SWIPER
+// ================ACCORDION=================
+
+const aboutAccordion = new Accordion('.accordion-container', {
+  showMultiple: true,
+});
+
+export default aboutAccordion;
+
+// ================SWIPER=================
 
 const swiperAbout = new Swiper('.swiper-about', {
   loop: true,
@@ -60,7 +67,7 @@ const swiperAbout = new Swiper('.swiper-about', {
   },
 });
 
-// ACCORDION
+// ================ACCORDION=================
 
 const accordionAbout = new Accordion('.accordion-container-about', {
   duration: 700,
