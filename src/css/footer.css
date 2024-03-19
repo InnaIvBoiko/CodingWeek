@@ -56,20 +56,38 @@
   font-weight: 500;
   font-size: 16px;
   color: #fafafa;
+  transition: background-color 0.5s;
+}
+
+.footer-send-btn:hover {
+  background-color: #e0373f;
 }
 
 .footer-input,
 .footer-textarea {
   border: none;
-  border-bottom: 1px solid #fafafa33;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   background: transparent;
   outline: none;
-  color: #fafafa99;
+  color: rgba(250, 250, 250, 0.6);
   padding-bottom: 20px;
   width: 100%;
   height: 44px;
   overflow: hidden;
   resize: none;
+  transition: border-bottom 0.5s;
+}
+
+.footer-input::placeholder {
+  transition: color 0.5s;
+}
+
+.footer-input:hover {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.footer-input:hover::placeholder {
+  color: rgb(250, 250, 250);
 }
 
 .footer-label {
@@ -97,6 +115,11 @@
   padding: 10px 12px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
+  transition: border 0.5s;
+}
+
+.footer-link:hover {
+  border: 1px solid #fafafa;
 }
 
 .link-field {
@@ -107,13 +130,16 @@
 /*& Modal Window &*/
 
 .footer-form-modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
   background: rgba(15, 15, 16, 0.6);
+  z-index: 9999;
 }
 
 .footer-modal-content {
@@ -127,10 +153,12 @@
   padding: 64px 32px;
   border: 1px solid #fafafa1a;
   border-radius: 20px;
+  transition: 1s;
 }
 
-.is-hidden {
-  display: none;
+.is-visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .footer-modal-title {
@@ -149,6 +177,22 @@
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
+}
+
+.form-modal-icon {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  width: 24px;
+  height: 24px;
+}
+
+.is-valid {
+  border-bottom: 3px solid #3cbc81;
+}
+
+.is-invalid {
+  border-bottom: 1px solid #ed3b44;
 }
 
 @media screen and (min-width: 375px) {

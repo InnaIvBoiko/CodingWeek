@@ -7,7 +7,7 @@ import "./js/faq";
 import './js/projects';
 import './js/reviews';
 // import header from "./js/header";
-// import footer from "./js/footer";
+import "./js/footer";
 // import "./js/reviews";
 // libraries
 // import iziToast from "izitoast";
