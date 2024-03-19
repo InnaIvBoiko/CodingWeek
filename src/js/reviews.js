@@ -1,8 +1,8 @@
-import Swiper from 'swiper';
-import 'swiper/css';
+import Swiper from 'swiper/bundle'; 
+import 'swiper/css/bundle'; 
 import axios from 'axios';
 
-const previosBtn = document.querySelector('.reviews-left-button');
+const previousBtn = document.querySelector('.reviews-left-button'); 
 const nextBtn = document.querySelector('.reviews-right-button');
 const swiper = new Swiper('.reviews-swiper', {
     spaceBetween: 16,
@@ -21,37 +21,39 @@ async function getReviews() {
         renderData(response.data); 
     } catch (error) {
         console.error(error.message);
+        
     }
 }
 
-previosBtn.disabled = true;
+previousBtn.disabled = true;
 
-previosBtn.addEventListener('click', prev); 
+previousBtn.addEventListener('click', prev);
 nextBtn.addEventListener('click', next);
 
 function prev() {
-    swiper.slidePrev()
-};
+    swiper.slidePrev();
+}
+
 function next() {
-    swiper.slideNext()
-};
+    swiper.slideNext();
+}
 
 swiper.on('slideChange', function () {
-   
     if (swiper.isBeginning) {
-        previosBtn.disabled = true;
-        previosBtn.style.borderColor ='#fafafa33';
+        previousBtn.disabled = true; 
+        previousBtn.style.borderColor = '#fafafa33'; 
     } else {
-        previosBtn.disabled = false;
-        previosBtn.style.borderColor ='#fafafa80';
-        
+        previousBtn.disabled = false; 
+        previousBtn.style.borderColor = '#fafafa80'; 
     }
     
     if (swiper.isEnd) {
         nextBtn.disabled = true;
         nextBtn.style.borderColor = '#fafafa33';
     } else {
-      nextBtn.disabled = false;
-      nextBtn.style.borderColor ='#fafafa80';
+        nextBtn.disabled = false;
+        nextBtn.style.borderColor = '#fafafa80';
     }
 });
+
+getReviews();
