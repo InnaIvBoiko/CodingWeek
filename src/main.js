@@ -6,7 +6,7 @@ import FAQ from "./js/faq";
 // import hero from "./js/hero";
 // import projects from "./js/projects";
 // import header from "./js/header";
-// import footer from "./js/footer";
+import footer from "./js/footer";
 // import reviews from "./js/reviews";
 // libraries
 // import iziToast from "izitoast";
