@@ -1,13 +1,11 @@
-// parts
-import "./js/about";
-// import benefits from "./js/benefits";
-// import covers from "./js/covers";
-import "./js/faq";
-// import hero from "./js/hero";
+import './js/header';
+import './js/about';
 import './js/projects';
+import './js/faq';
+import './js/covers';
 import './js/reviews';
 // import header from "./js/header";
-import "./js/footer";
+// import footer from "./js/footer";
 // import "./js/reviews";
 // libraries
 // import iziToast from "izitoast";
