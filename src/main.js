@@ -5,10 +5,10 @@ import "./js/about";
 import "./js/faq";
 // import hero from "./js/hero";
 import './js/projects';
-import './js/reviews';
-// import header from "./js/header";
+//import './js/reviews';
+ import  "./js/header";
 // import footer from "./js/footer";
-// import "./js/reviews";
+ import "./js/reviews";
 // libraries
 // import iziToast from "izitoast";
 // import "izitoast/dist/css/iziToast.min.css";
