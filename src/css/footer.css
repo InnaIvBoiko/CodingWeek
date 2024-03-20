@@ -90,6 +90,11 @@
   color: rgb(250, 250, 250);
 }
 
+.footer-input:focus,
+.footer-input:active {
+  color: #fafafa;
+}
+
 .footer-label {
   height: 44px;
   margin-bottom: 16px;
@@ -187,11 +192,32 @@
   height: 24px;
 }
 
+.footer-input-message {
+  margin-top: 5px;
+  margin-bottom: 14px;
+}
+
 .is-valid {
-  border-bottom: 3px solid #3cbc81;
+  border-bottom: 1px solid #3cbc81;
+}
+
+.footer-email-label:has(.is-invalid) {
+  margin-bottom: 45px;
+}
+
+.footer-email-label:has(.is-valid) {
+  margin-bottom: 45px;
+}
+
+.is-valid:hover {
+  border-bottom: 1px solid #3cbc81;
 }
 
 .is-invalid {
+  border-bottom: 1px solid #ed3b44;
+}
+
+.is-invalid:hover {
   border-bottom: 1px solid #ed3b44;
 }
 
