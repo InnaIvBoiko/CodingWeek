@@ -88,7 +88,7 @@
 }
 
 #about .about-text {
-    color: #fafafa;
+  color: #fafafa;
   padding-top: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -115,8 +115,12 @@
   background-color: transparent;
 }
 
+.about-skills {
+  position: relative;
+}
+
 #about .about-skills-list {
-  /* display: flex; */
+  display: flex;
 }
 
 #about .about-skills-item {
@@ -138,7 +142,7 @@
 /* =============== TABLET ===============*/
 
 @media screen and (min-width: 768px) {
-    #about .about-container {
+  #about .about-container {
     gap: 64px;
   }
 
@@ -177,7 +181,7 @@
 /* =============== DESKTOP ===============*/
 
 @media screen and (min-width: 1440px) {
-    #about .about-container {
+  #about .about-container {
     gap: 96px;
   }
 
