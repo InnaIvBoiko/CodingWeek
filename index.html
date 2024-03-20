@@ -38,7 +38,7 @@
     <script type="module" crossorigin src="/CodingWeek/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/CodingWeek/assets/vendor-4970faf1.js">
     <link rel="stylesheet" href="/CodingWeek/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/CodingWeek/assets/index-0ca6ce7d.css">
+    <link rel="stylesheet" href="/CodingWeek/assets/index-da5420e7.css">
   </head>
   <body>
     <header class="header">
@@ -236,7 +236,7 @@ Order the project
         </li>
       </ul>
     </div>
-    <div class="about-skills">
+    <!-- <div class="about-skills">
       <ul class="about-skills-list">
         <li class="about-skills-item is-active">HTML/CSS</li>
         <li class="about-skills-item">JavaScript</li>
@@ -245,6 +245,33 @@ Order the project
         <li class="about-skills-item">React Native</li>
         <li class="about-skills-item">Soft skills</li>
       </ul>
+    </div> -->
+    <div class="about-skills swiper-about">
+      <!-- Additional required wrapper -->
+      <ul class="about-skills-list swiper-wrapper">
+        <!-- Slides -->
+        <div class="about-skills-item swiper-slide is-active">HTML/CSS</div>
+        <div class="about-skills-item swiper-slide">JavaScript</div>
+        <div class="about-skills-item swiper-slide">React</div>
+        <div class="about-skills-item swiper-slide">Node. js</div>
+        <div class="about-skills-item swiper-slide">React Native</div>
+        <div class="about-skills-item swiper-slide">Soft skills</div>
+      </ul>
+
+      <!-- If we need navigation buttons -->
+
+      <div class="swiper-button-next">
+        <button class="about-button right-button" type="button">
+          <svg
+            class="about-button-icon right-button-icon"
+            width="24"
+            height="24"
+            aria-label="arrow narrow right"
+          >
+            <use href="/CodingWeek/assets/sprite-d8d450e4.svg#icon-arrow-narrow-left-icon"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
@@ -312,114 +339,135 @@ Order the project
   </div>
 </section>
 
-      <section id ="projects" class = "projects">
-    
-    <div class="projects-container container swiper">
-        <h2 class="projects-section-title">projects</h2>
-        <ul class="projects-container-list swiper-wrapper">
-          <div class="swiper-slide">
-             <li class="projects-container-item">
-             
-                <div class="projects-content">
-                    <ul class="project-content-tech-list">
-                        <li class="project-content-tech-item">#react</li>
-                        <li class="project-content-tech-item">#js</li>
-                        <li class="project-content-tech-item">#node js</li>
-                        <li class="project-content-tech-item">#git</li>
-                    </ul>
+      <section id="projects" class="projects">
+  <div class="projects-container container swiper">
+    <h2 class="projects-section-title">projects</h2>
+    <ul class="projects-container-list swiper-wrapper">
+      <div class="swiper-slide">
+        <li class="projects-container-item">
+          <div class="projects-content">
+            <ul class="project-content-tech-list">
+              <li class="project-content-tech-item">#react</li>
+              <li class="project-content-tech-item">#js</li>
+              <li class="project-content-tech-item">#node js</li>
+              <li class="project-content-tech-item">#git</li>
+            </ul>
 
-                    <h3 class="project-container-title">
-                        Programming Across Borders: Ideas, Technologies, Innovations
-                    </h3>
-                    <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
-                        See project
-                    </a>
-                </div>
-                <div class="project-container-img">
-                    <img class="project-container-img-pict" srcset="/CodingWeek/assets/book-mobile-acbfa2f5.png 311w, /CodingWeek/assets/book-mobile@2x-c8880695.png 622w, /CodingWeek/assets/book-tablet-23827c5f.png 614w, /CodingWeek/assets/book-tablet@2x-c84cf753.png 1228w"
-                        sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px" 
-                        src="/CodingWeek/assets/book-tablet-23827c5f.png"
-                        alt="book-mobile-photo">
-                </div>
-            </li>
+            <h3 class="project-container-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-container-link"
+              href="https://innaivboiko.github.io/CodingWeek/"
+              target="_blank"
+            >
+              See project
+            </a>
           </div>
-          <div class="swiper-slide">
-            <li  class="projects-container-item">
-
-                <div class="projects-content">
-                                    <ul class="project-content-tech-list">
-                                        <li class="project-content-tech-item">#react</li>
-                                        <li class="project-content-tech-item">#js</li>
-                                        <li class="project-content-tech-item">#node js</li>
-                                        <li class="project-content-tech-item">#git</li>
-                                    </ul>
-
-                                    <h3 class="project-container-title">
-                                        Programming Across Borders: Ideas, Technologies, Innovations
-                                    </h3>
-                                    <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
-                                        See project
-                                    </a>
-                </div>
-                <div class="project-container-img">
-                    <img class="project-container-img-pict" srcset="/CodingWeek/assets/petlove-mobile-2115d3d0.png 311w, /CodingWeek/assets/petlove-mobile@2x-7f32f99b.png 622w, /CodingWeek/assets/petlove-tablet-d675d4f2.png 614w, /CodingWeek/assets/petlove-tablet@2x-bc5238ea.png 1228w"
-                        sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px"
-                        src="/CodingWeek/assets/petlove-tablet-d675d4f2.png" 
-                        alt="petlove-mobile-photo">
-                </div>
-            </li>
+          <div class="project-container-img">
+            <img
+              class="project-container-img-pict"
+              srcset="/CodingWeek/assets/book-mobile-acbfa2f5.png 311w, /CodingWeek/assets/book-mobile@2x-c8880695.png 622w, /CodingWeek/assets/book-tablet-23827c5f.png 614w, /CodingWeek/assets/book-tablet@2x-c84cf753.png 1228w"
+              sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px"
+              src="/CodingWeek/assets/book-tablet-23827c5f.png"
+              alt="book-mobile-photo"
+            />
           </div>
-          <div class="swiper-slide">
-            <li class="projects-container-item">
+        </li>
+      </div>
+      <div class="swiper-slide">
+        <li class="projects-container-item">
+          <div class="projects-content">
+            <ul class="project-content-tech-list">
+              <li class="project-content-tech-item">#react</li>
+              <li class="project-content-tech-item">#js</li>
+              <li class="project-content-tech-item">#node js</li>
+              <li class="project-content-tech-item">#git</li>
+            </ul>
 
-                <div class="projects-content">
-                    <ul class="project-content-tech-list">
-                        <li class="project-content-tech-item">#react</li>
-                        <li class="project-content-tech-item">#js</li>
-                        <li class="project-content-tech-item">#node js</li>
-                        <li class="project-content-tech-item">#git</li>
-                    </ul>
-
-                    <h3 class="project-container-title">
-                        Programming Across Borders: Ideas, Technologies, Innovations
-                    </h3>
-                    <a class="project-container-link" href="https://innaivboiko.github.io/CodingWeek/" target="_blank">
-                        See project
-                    </a>
-                </div>
-                <div class="project-container-img">
-                    <img class="project-container-img-pict"  srcset="/CodingWeek/assets/form-mobile-8c5f8903.png 311w, /CodingWeek/assets/form-mobile@2x-25902fd4.png 622w, /CodingWeek/assets/form-tablet-1f3d51ff.png 614w, /CodingWeek/assets/form-tablet@2x-0648e4be.png 1228w"
-                        sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px"
-                        src="/CodingWeek/assets/form-tablet-1f3d51ff.png" 
-                        alt="form-mobile-photo">
-
-                </div>
-            </li>
+            <h3 class="project-container-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-container-link"
+              href="https://innaivboiko.github.io/CodingWeek/"
+              target="_blank"
+            >
+              See project
+            </a>
           </div>
-        </ul>
-        <div class="containet-projects-button">
-            
-            <div class="swiper-button-prev">
-                <button class="projects-button left-button" type="button">
-                    <svg class="projects-button-icon left-button-icon" width="24" height="24" aria-label="arrow narrow left">
-                        <use  href="/CodingWeek/assets/sprite-d8d450e4.svg#icon-arrow-narrow-right-icon" ></use>
-                    </svg>
-                </button>
-            </div>
-            <div class="swiper-button-next">
-                <button class="projects-button right-button" type="button">
-                    <svg class="projects-button-icon right-button-icon" width="24" height="24" aria-label="arrow narrow right">
-                        <use href="/CodingWeek/assets/sprite-d8d450e4.svg#icon-arrow-narrow-left-icon"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
+          <div class="project-container-img">
+            <img
+              class="project-container-img-pict"
+              srcset="/CodingWeek/assets/petlove-mobile-2115d3d0.png 311w, /CodingWeek/assets/petlove-mobile@2x-7f32f99b.png 622w, /CodingWeek/assets/petlove-tablet-d675d4f2.png 614w, /CodingWeek/assets/petlove-tablet@2x-bc5238ea.png 1228w"
+              sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px"
+              src="/CodingWeek/assets/petlove-tablet-d675d4f2.png"
+              alt="petlove-mobile-photo"
+            />
+          </div>
+        </li>
+      </div>
+      <div class="swiper-slide">
+        <li class="projects-container-item">
+          <div class="projects-content">
+            <ul class="project-content-tech-list">
+              <li class="project-content-tech-item">#react</li>
+              <li class="project-content-tech-item">#js</li>
+              <li class="project-content-tech-item">#node js</li>
+              <li class="project-content-tech-item">#git</li>
+            </ul>
+
+            <h3 class="project-container-title">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </h3>
+            <a
+              class="project-container-link"
+              href="https://innaivboiko.github.io/CodingWeek/"
+              target="_blank"
+            >
+              See project
+            </a>
+          </div>
+          <div class="project-container-img">
+            <img
+              class="project-container-img-pict"
+              srcset="/CodingWeek/assets/form-mobile-8c5f8903.png 311w, /CodingWeek/assets/form-mobile@2x-25902fd4.png 622w, /CodingWeek/assets/form-tablet-1f3d51ff.png 614w, /CodingWeek/assets/form-tablet@2x-0648e4be.png 1228w"
+              sizes="(min-width:1440 ) 614px,(min-width:768px) 614px, (min-width: 375px) 311px"
+              src="/CodingWeek/assets/form-tablet-1f3d51ff.png"
+              alt="form-mobile-photo"
+            />
+          </div>
+        </li>
+      </div>
+    </ul>
+    <div class="containet-projects-button">
+      <div class="swiper-button-prev">
+        <button class="projects-button left-button" type="button">
+          <svg
+            class="projects-button-icon left-button-icon"
+            width="24"
+            height="24"
+            aria-label="arrow narrow left"
+          >
+            <use href="/CodingWeek/assets/sprite-d8d450e4.svg#icon-arrow-narrow-right-icon"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="swiper-button-next">
+        <button class="projects-button right-button" type="button">
+          <svg
+            class="projects-button-icon right-button-icon"
+            width="24"
+            height="24"
+            aria-label="arrow narrow right"
+          >
+            <use href="/CodingWeek/assets/sprite-d8d450e4.svg#icon-arrow-narrow-left-icon"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
-
-
-
-
 
       <section class="FAQ-section" id="FAQ">
     <div class="container">
@@ -998,6 +1046,7 @@ Order the project
           </button>
         </div>
       </div>
+    </div>
   </div>
 </section>
 
