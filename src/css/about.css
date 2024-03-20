@@ -34,6 +34,7 @@
   border-radius: 24px;
   width: 343px;
   height: 500px;
+  background-size: cover;
 }
 
 #about .about-accordion {
@@ -115,11 +116,14 @@
   background-color: transparent;
 }
 
+/* Swiper */
+
 .about-skills {
   position: relative;
+  overflow: hidden;
 }
 
-#about .about-skills-list {
+.about-skills-list {
   display: flex;
 }
 
@@ -127,15 +131,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  max-width: 130px;
+  height: 130px;
   border-radius: 100%;
   border: 1px solid rgba(250, 250, 250, 0.2);
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -0.02em;
 }
 
-#about .about-skills-item.is-active {
+#about .swiper-button-next {
+  color: transparent;
+}
+
+.about-button-swiper {
+  position: absolute;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+}
+
+#about .swiper-slide-active {
   background-color: #ed3b44;
 }
 
@@ -176,6 +194,19 @@
     padding-top: 26px;
     max-width: 656px;
   }
+
+  /* Swiper */
+
+  #about .about-skills-item {
+    max-width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .about-button-swiper {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* =============== DESKTOP ===============*/
@@ -202,5 +233,15 @@
   }
   #about .about-ac-container {
     padding-left: 658px;
+  }
+
+  /* Swiper */
+
+  .about-button-swiper {
+    right: 32px;
+  }
+
+  #about .swiper-button-lock {
+    display: block;
   }
 }
