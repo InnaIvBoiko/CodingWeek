@@ -4,8 +4,8 @@ import './js/projects';
 import './js/faq';
 import './js/covers';
 import './js/reviews';
+import './js/footer';
 // import header from "./js/header";
-// import footer from "./js/footer";
 // import "./js/reviews";
 // libraries
 // import iziToast from "izitoast";

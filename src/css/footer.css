@@ -279,6 +279,14 @@
     width: 492px;
     height: 246px;
   }
+
+  .footer-email-label:has(.is-invalid) {
+    margin-bottom: 0px;
+  }
+
+  .footer-email-label:has(.is-valid) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
