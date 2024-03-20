@@ -67,6 +67,7 @@ swiper.on('slideChange', function () {
     } else {
         previousBtn.disabled = false; 
         previousBtn.style.borderColor = '#fafafa80'; 
+
     }
     
     if (swiper.isEnd) {
@@ -136,3 +137,4 @@ swiper.on('slideChange', function () {
 //       nextBtn.style.borderColor ='#fafafa80';
 //     }
 // });
+

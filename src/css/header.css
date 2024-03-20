@@ -3,6 +3,7 @@
   width: 100%;
   padding-top: 32px;
   background-color: transparent;
+  z-index: 10;
 }
 
 .header-wrap {
@@ -41,22 +42,6 @@
   padding: 10px;
 }
 
-.header-nav {
-  display: none;
-}
-
-.header-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.header-menu-item {
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  text-align: center;
-}
-
 .header-link-for-footer {
   display: none;
   border-radius: 60px;
@@ -82,6 +67,7 @@
 
   .header-menu-btn {
     display: flex;
+    background: transparent;
   }
 
   .header-link-for-footer {
