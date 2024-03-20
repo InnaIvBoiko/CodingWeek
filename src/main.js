@@ -5,4 +5,3 @@ import './js/faq';
 import './js/covers';
 import './js/reviews';
 import './js/footer';
-
