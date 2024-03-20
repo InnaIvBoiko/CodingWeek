@@ -1,39 +1,34 @@
-"use strict"
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 const  aboutAccordion = new Accordion('.about-accordеon-container', {
   showMultiple: true,
 });
+aboutAccordion.open(0);
 
-// export default aboutAccordion;
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-// // Import Swiper styles
-// import 'swiper/swiper-bundle.css';
+// Function to toggle section visibility
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  if (section.style.display === 'none') {
+    section.style.display = 'block';
+  } else {
+    section.style.display = 'none';
+  }
+}
 
-// // Import Swiper JavaScript
-// import Swiper from 'swiper/swiper-bundle.min.js';
-
-// // Function to toggle section visibility
-// function toggleSection(id) {
-//   const section = document.getElementById(id);
-//   if (section.style.display === 'none') {
-//     section.style.display = 'block';
-//   } else {
-//     section.style.display = 'none';
-//   }
-// }
-
-// // Swiper configuration
-// const swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   loop: true,
-// });
+// Swiper configuration
+const swiper = new Swiper('.swiper-about', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  keyboard: {
+    enabled: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    // prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+});
