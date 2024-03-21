@@ -49,7 +49,6 @@ const swiper = new Swiper('.swiper-reviews', {
     }
 });
 
-
 const CARDS = document.querySelector('.cards-container');
 
 async function getReviews() {
@@ -84,7 +83,6 @@ function markUpReviews() {
                     </p>
                 </li>`)
                 .join('');
-            CARDS.innerHTML = '';
             return CARDS.insertAdjacentHTML('afterbegin', result);
         })
         .catch((error) => {
