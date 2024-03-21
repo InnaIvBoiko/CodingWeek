@@ -59,17 +59,18 @@ function onFormSubmit(event) {
   };
 
   axios
-    .post(
-      'https://virtserver.swaggerhub.com/Qalib/project-jefferson/1.0.0/devices',
-      formData
-    )
+    .post('https://portfolio-js.b.goit.study/api-docs', formData)
     .then(response => {
       footerFormModal.classList.add('is-visible');
       footerEmailInput.classList.remove('is-valid');
       footerInputMessage.textContent = '';
     })
     .catch(error => {
-      onError(error);
+      if (!navigator.onLine) {
+        onErrorOffline(error);
+      } else {
+        onError(error);
+      }
     })
     .finally(() => {
       footerForm.reset();
@@ -96,6 +97,18 @@ function onError(error) {
   iziToast.error({
     title: 'Post Error',
     message: 'An error occurred while sending the data. Please try again.',
+    position: 'topRight',
+    timeout: 5000,
+    progressBarColor: '#ffffff',
+    theme: 'dark',
+    backgroundColor: '#1c1d20',
+  });
+}
+
+function onErrorOffline(error) {
+  iziToast.error({
+    title: 'Connection Error',
+    message: 'Sorry you are offline. Please try again.',
     position: 'topRight',
     timeout: 5000,
     progressBarColor: '#ffffff',
