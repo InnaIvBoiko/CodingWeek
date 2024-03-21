@@ -1,200 +1,91 @@
-.cards-container {
-  display: flex;
-  gap: 16px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.card {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 20px;
-  padding: 32px 24px;
-  width: 343px;
-
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
-}
-
-.title {
+.title-reviews {
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
   margin-bottom: 32px;
 }
-.author-photo {
+
+.card {
+  max-width: 344px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  margin-bottom: 84px;
+}
+
+.card-foto {
+  border-radius: 10px;
   width: 48px;
   height: 48px;
-  border-radius: 10px;
+  background-size: cover;
 }
-.review-author-name {
+
+.card-title {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
   margin-top: 32px;
+  margin-bottom: 8px;
 }
 
-.review-content {
-  margin-top: 8px;
-  margin-bottom: 32px;
-  height: auto;
-  width: 295;
+.card-text {
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
 }
-.reviews-button-conteiner {
+
+.reviews-nav-btns {
+  position: absolute;
+  bottom: 0;
+  left: calc((100% - 116px) / 2);
   display: flex;
   gap: 12px;
-  width: 116px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 32px;
-}
-.reviews-button {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  border: 1px solid #fafafa80;
+  width: 116px;
+  height: 52px;
+}
+
+#reviews .swiper-button-prev {
+  color: transparent;
+}
+
+#reviews .swiper-button-next {
+  color: transparent;
+}
+
+#reviews button {
+  position: absolute;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  background-color: #1c1d20;
   border-radius: 60px;
   padding: 14px;
   width: 52px;
   height: 52px;
-  transform: rotate(-180deg);
-  background-color: transparent;
 }
-.reviews-button-prev {
-  border: 1px solid #fafafa33;
-}
+
 @media screen and (min-width: 768px) {
-  .reviews-button-conteiner {
-    height: 68px;
-    width: 156px;
+  .card {
+    width: 344px;
+    margin-bottom: 100px;
   }
-  .reviews-button {
-    padding: 18px;
+  .reviews-nav-btns {
+    left: calc((100% - 156px) / 2);
+    display: flex;
     gap: 20px;
-    width: 68px;
+    justify-content: center;
+    width: 156px;
     height: 68px;
-  }
-  .reviews-button-icon {
-    transform: scale(1.33);
   }
 }
+
 @media screen and (min-width: 1440px) {
-  .swiper-slide {
+  .card {
     width: 332px;
   }
-  .review-content {
-    width: 284;
-  }
 }
-
-
-
-/* .swiper-slide.cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  }
-
-.card {
-border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 20px;
-padding: 32px 24px;
-width: 343px !important;
-height: 302px;
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.6);
-}
-
-.title {
-line-height: 1.5;
-letter-spacing: -0.02em;
-color: rgba(250, 250, 250, 0.4);
-margin-bottom: 32px;
-}
-
-.review-author-name {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-  margin-top: 32px;
-}
-
-.review-content {
-  margin-top: 8px;
-}
-
-.containet-reviews-button {
-  display: flex;
-  gap: 12px;
-  width: 116px;
-  height: 52;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 32px;
-}
-.reviews-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  border: 1px solid #fafafa80;
-  border-radius: 50%;
-  padding: 14px;
-  width: 52px;
-  height: 52px;
-  transform: rotate(-180deg);
-  background-color: transparent;
-}
-
-.reviews-left-button {
-  border: 1px solid #fafafa33;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .card {
-border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 20px;
-padding: 32px 24px;
-width: 344px;
-height: 302px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-
-  .reviews-button-icon {
-    transform: scale(1.33);
-  }
-  .card {
-width: calc(25% - 16px);
-border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 20px;
-padding: 32px 24px;
-width: 332px;
-height: 302px;
-
-  }
-
-  .swiper-slide.cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  }
-
-} */
-
