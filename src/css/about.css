@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 
-#about .about-title {
+#about .about-slog {
   border-radius: 24px;
   max-width: 343px;
   height: 500px;
@@ -33,7 +33,6 @@
 #about .about-hero-img {
   border-radius: 24px;
   width: 343px;
-  height: 500px;
   background-size: cover;
 }
 
@@ -120,11 +119,14 @@
 
 .about-skills {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  display: flex;
 }
 
 .about-skills-list {
   display: flex;
+  max-width: 260px;
+  overflow: hidden;
 }
 
 #about .about-skills-item {
@@ -164,7 +166,7 @@
     gap: 64px;
   }
 
-  #about .about-title {
+  #about .about-slog {
     max-width: 704px;
     height: 700px;
     font-size: 38px;
@@ -174,7 +176,6 @@
 
   #about .about-hero-img {
     width: 704px;
-    height: 700px;
   }
 
   #about .about-accordion {
@@ -196,6 +197,10 @@
   }
 
   /* Swiper */
+
+  .about-skills-list {
+    max-width: 600px;
+  }
 
   #about .about-skills-item {
     max-width: 200px;
@@ -220,7 +225,7 @@
     flex-wrap: nowrap;
   }
 
-  #about .about-title {
+  #about .about-slog {
     max-width: 680px;
   }
 
@@ -236,6 +241,10 @@
   }
 
   /* Swiper */
+
+  .about-skills-list {
+    max-width: 1200px;
+  }
 
   .about-button-swiper {
     right: 32px;
