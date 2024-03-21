@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+.projects-container-list {
+  width: 343px;
+  height: auto;
+}
 .projects-section-title {
   font-weight: 700;
   font-size: 16px;
@@ -98,7 +101,8 @@
   margin-right: auto;
   margin-top: 32px;
 }
-.projects-button {
+
+.custom-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,7 +117,7 @@
   background-color: transparent;
 }
 
-.left-button {
+.custom-prev-button {
   border: 1px solid #fafafa33;
 }
 
@@ -173,14 +177,12 @@
     width: 614px;
     height: 385px;
   }
-
   .containet-projects-button {
+    height: 68px;
     width: 156px;
   }
-  .containet-projects-button:last-child {
-    gap: 20px;
-  }
-  .projects-button {
+
+  .custom-button {
     padding: 18px;
     gap: 20px;
     width: 68px;
