@@ -16,7 +16,8 @@ footerForm.addEventListener('submit', onFormSubmit);
 window.addEventListener('keydown', onKeyDown);
 
 footerEmailInput.addEventListener('input', function () {
-  const MAX_LENGTH = 40;
+  const MAX_LENGTH = footerEmailInput.clientWidth / 8;
+  const inputLength = footerEmailInput.value.length;
 
   if (footerEmailInput.checkValidity()) {
     footerEmailInput.classList.add('is-valid');
@@ -30,7 +31,7 @@ footerEmailInput.addEventListener('input', function () {
     footerInputMessage.style.color = '#ed3b44';
   }
 
-  if (footerEmailInput.value.length > MAX_LENGTH) {
+  if (inputLength > MAX_LENGTH) {
     footerEmailInput.value =
       footerEmailInput.value.substring(0, MAX_LENGTH) + '...';
   }
@@ -42,9 +43,10 @@ footerEmailInput.addEventListener('input', function () {
 });
 
 footerCommentsInput.addEventListener('input', function () {
-  const MAX_LENGTH = 100;
+  const MAX_LENGTH = footerCommentsInput.clientWidth / 8;
+  const inputLength = footerCommentsInput.value.length;
 
-  if (footerCommentsInput.value.length > MAX_LENGTH) {
+  if (inputLength > MAX_LENGTH) {
     footerCommentsInput.value =
       footerCommentsInput.value.substring(0, MAX_LENGTH) + '...';
   }
@@ -64,6 +66,7 @@ function onFormSubmit(event) {
       footerFormModal.classList.add('is-visible');
       footerEmailInput.classList.remove('is-valid');
       footerInputMessage.textContent = '';
+      document.body.style.overflow = 'hidden';
     })
     .catch(error => {
       if (!navigator.onLine) {
@@ -80,11 +83,13 @@ function onFormSubmit(event) {
 function onModalClose(event) {
   if (event.target === event.currentTarget) {
     footerFormModal.classList.remove('is-visible');
+    document.body.style.overflow = '';
   }
 }
 
 function onModalCloseBtn() {
   footerFormModal.classList.remove('is-visible');
+  document.body.style.overflow = '';
 }
 
 function onKeyDown(event) {

@@ -145,6 +145,7 @@
   transition: opacity 0.5s, visibility 0.5s;
   background: rgba(15, 15, 16, 0.6);
   z-index: 9999;
+  
 }
 
 .footer-modal-content {
@@ -190,6 +191,7 @@
   right: 26px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .footer-input-message {
