@@ -9,7 +9,11 @@ const swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.custom-next-button',
         prevEl: '.custom-prev-button', 
-    },     
+    },  
+    effect: 'flip',
+    limitRotation:	true,	
+    slideShadows:	true,	
+
     a11y: true,
     allowTouchMove: true,
     centeredSlides: true,

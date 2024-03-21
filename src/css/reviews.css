@@ -42,7 +42,46 @@
   height: auto;
   width: 295;
 }
-
+.reviews-button-conteiner {
+  display: flex;
+  gap: 12px;
+  width: 116px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+}
+.reviews-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #fafafa80;
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  transform: rotate(-180deg);
+  background-color: transparent;
+}
+.reviews-button-prev {
+  border: 1px solid #fafafa33;
+}
+@media screen and (min-width: 768px) {
+  .reviews-button-conteiner {
+    height: 68px;
+    width: 156px;
+  }
+  .reviews-button {
+    padding: 18px;
+    gap: 20px;
+    width: 68px;
+    height: 68px;
+  }
+  .reviews-button-icon {
+    transform: scale(1.33);
+  }
+}
 @media screen and (min-width: 1440px) {
   .swiper-slide {
     width: 332px;
