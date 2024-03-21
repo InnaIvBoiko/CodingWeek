@@ -1,6 +1,6 @@
 
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import Swiper from 'swiper/bundle'; 
+import 'swiper/css/bundle'; 
 import axios from 'axios';
 const prevBtn = document.querySelector('.reviews-button-prev');
 const nextBtn = document.querySelector('.reviews-button-next');
@@ -27,6 +27,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
                     1440: { slidesPerView: 4,
                             spaceBetween: 40,
                              slidesPerGroup: 4,},  
+
 
                 },
 	on: {
@@ -65,8 +66,12 @@ async function getReviews() {
 };
 
 
+
+previousBtn.disabled = true;
+
 function renderData(data) {
     
+
     const render = data.map(({ author, avatar_url, review }) => {
         return `<div class="card swiper-slide">
         
@@ -80,3 +85,5 @@ function renderData(data) {
 }
 
 getReviews();
+
+  

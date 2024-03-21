@@ -1,39 +1,43 @@
-"use strict"
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const  aboutAccordion = new Accordion('.about-accordеon-container', {
   showMultiple: true,
 });
+aboutAccordion.open(0);
 
-// export default aboutAccordion;
+// Function to toggle section visibility
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  if (section.style.display === 'none') {
+    section.style.display = 'block';
+  } else {
+    section.style.display = 'none';
+  }
+}
 
-// // Import Swiper styles
-// import 'swiper/swiper-bundle.css';
-
-// // Import Swiper JavaScript
-// import Swiper from 'swiper/swiper-bundle.min.js';
-
-// // Function to toggle section visibility
-// function toggleSection(id) {
-//   const section = document.getElementById(id);
-//   if (section.style.display === 'none') {
-//     section.style.display = 'block';
-//   } else {
-//     section.style.display = 'none';
-//   }
-// }
-
-// // Swiper configuration
-// const swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   keyboard: {
-//     enabled: true,
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   loop: true,
-// });
+// Swiper configuration
+const swiper = new Swiper('.swiper-about', {
+  slidesPerView: 2,
+  spaceBetween: 0,
+  a11y: true,
+  allowTouchMove: true,
+  keyboard: true,
+  mousewheel: true,
+  nested: true,
+  centeredSlides: false,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+  },
+  breakpoints: {
+        768: {
+            slidesPerView: 3, 
+        },
+        1440: {
+          slidesPerView: 6, 
+        }
+    }
+});
