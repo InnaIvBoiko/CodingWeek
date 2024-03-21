@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 
 const prevBtn = document.querySelector('.custom-prev-button');
 const nextBtn = document.querySelector('.custom-next-button');
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.projects-swiper', {
     spaceBetween: 100,
     navigation: {
         nextEl: '.custom-next-button',
