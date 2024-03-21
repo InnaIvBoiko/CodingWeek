@@ -7,7 +7,7 @@ const aboutLink = document.querySelector(".item-link-about");
 const benefitsLink = document.querySelector(".item-link-benefits");
 const projectsLink = document.querySelector(".item-link-projects");
 const faqLink = document.querySelector(".item-link-faq");
-    
+const orderLink = document.querySelector(".modal-order-btn-link");   
 closeBtn.addEventListener("click", closeModal)
  
 menu.addEventListener("click", () => {
@@ -45,3 +45,7 @@ faqLink.addEventListener("click", () => {
     window.location.href = "#faq";
 });
 
+orderLink.addEventListener("click", () => {
+    closeModal();
+    window.location.href = "#footer";
+})

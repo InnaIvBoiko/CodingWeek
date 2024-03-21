@@ -1,19 +1,23 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const prevBtn = document.querySelector('.left-button');
-const nextBtn = document.querySelector('.right-button');
+
+const prevBtn = document.querySelector('.custom-prev-button');
+const nextBtn = document.querySelector('.custom-next-button');
 const swiper = new Swiper('.swiper', {
     spaceBetween: 100,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev', 
-    },     
+        nextEl: '.custom-next-button',
+        prevEl: '.custom-prev-button', 
+    },  
+    effect: 'flip',
+    limitRotation:	true,	
+    slideShadows:	true,	
+
     a11y: true,
     allowTouchMove: true,
     centeredSlides: true,
     keyboard: true,
-    mousewheel: false,
     nested: true,
     on: {
         slideChange: function () {
@@ -35,6 +39,5 @@ const swiper = new Swiper('.swiper', {
             }
         }
     }
-});
 
-prevBtn.disabled = true;
+});
