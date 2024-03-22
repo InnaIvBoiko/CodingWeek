@@ -114,15 +114,18 @@
     opacity: 1;
     visibility: visible;
   }
-  .modal-header-menu {
-    margin-left: 354px;
+  .header-menu-list {
+    position: absolute;
+    bottom: 191px;
+    left: 2px;
   }
 }
 @media screen and (min-width: 1440px) {
   .modal-header {
     width: 1440px;
   }
-  .modal-header-menu {
-    margin-left: 730px;
+  .header-menu-list {
+    bottom: 251px;
+    left: 43px;
   }
 }
