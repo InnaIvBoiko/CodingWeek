@@ -18,6 +18,10 @@ menuBtn.addEventListener('click', () => {
     };
 });
 
+openMenu.addEventListener('click', () => {
+    openMenu.classList.remove('is-visibly-menu');
+});
+
 menuBurger.addEventListener('click', () => {
     openBurger.classList.add('is-open');
 });
