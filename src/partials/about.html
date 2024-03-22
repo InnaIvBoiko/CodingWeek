@@ -1,12 +1,13 @@
 <section id="about">
   <div class="container about-container">
+    <h2 class="visually-hidden">About me</h2>
     <div class="about-foto">
-      <h2 class="about-title">
+      <p class="about-slog">
         I work with people all over the world to create impressive and
         <span class="text-accent-red">functional</span>
         <span class="text-accent-grey">websites</span>
         that reflect each client's unique personality.
-      </h2>
+      </p>
       <img
         class="about-hero-img"
         srcset="
@@ -23,7 +24,7 @@
       />
     </div>
     <div class="about-accordion">
-      <ul class="about-list about-accordеon-container">
+      <ul class="about-list about-accordeon-container">
         <li class="about-item ac">
           <div class="about-item-container ac-header">
             <h3 class="about-item-headline">About me</h3>
@@ -112,31 +113,36 @@
         </li>
       </ul>
     </div>
-    <div class="about-skills swiper-about">
-      <!-- Additional required wrapper -->
-      <ul class="about-skills-list swiper-wrapper">
-        <!-- Slides -->
-        <div class="about-skills-item swiper-slide is-active">HTML/CSS</div>
-        <div class="about-skills-item swiper-slide">JavaScript</div>
-        <div class="about-skills-item swiper-slide">React</div>
-        <div class="about-skills-item swiper-slide">Node. js</div>
-        <div class="about-skills-item swiper-slide">React Native</div>
-        <div class="about-skills-item swiper-slide">Soft skills</div>
-      </ul>
-
-      <!-- If we need navigation buttons -->
-
-      <div class="swiper-button-next">
-        <button class="about-button right-button" type="button">
-          <svg
-            class="about-button-icon right-button-icon"
-            width="24"
-            height="24"
-            aria-label="arrow narrow right"
-          >
-            <use href="./img/sprite.svg#icon-arrow-narrow-left-icon"></use>
-          </svg>
-        </button>
+    <div class="about-wrapper">
+      <div class="about-skills swiper swiper-about">
+        <ul class="about-skills-list swiper-wrapper">
+          <li class="about-skills-item swiper-slide">HTML/CSS</li>
+          <li class="about-skills-item swiper-slide">JavaScript</li>
+          <li class="about-skills-item swiper-slide">React</li>
+          <li class="about-skills-item swiper-slide">Node. js</li>
+          <li class="about-skills-item swiper-slide">React Native</li>
+          <li class="about-skills-item swiper-slide">Soft skills</li>
+          <li class="about-skills-item swiper-slide">HTML/CSS</li>
+          <li class="about-skills-item swiper-slide">JavaScript</li>
+          <li class="about-skills-item swiper-slide">React</li>
+          <li class="about-skills-item swiper-slide">Node. js</li>
+          <li class="about-skills-item swiper-slide">React Native</li>
+          <li class="about-skills-item swiper-slide">Soft skills</li>
+        </ul>
+      </div>
+      <div class="about-nav-btn">
+        <div class="swiper-button-next">
+          <button class="about-button-swiper right-button" type="button">
+            <svg
+              class="about-button-icon right-button-icon"
+              width="24"
+              height="24"
+              aria-label="arrow narrow right"
+            >
+              <use href="./img/sprite.svg#icon-arrow-narrow-right-icon"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </div>
