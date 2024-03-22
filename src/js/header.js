@@ -26,26 +26,32 @@ menuCloseLink.addEventListener("click", closeModal)
 
 aboutLink.addEventListener("click", () => {
     closeModal();
-    window.location.href = "#about";
+    const about = document.getElementById("about");
+    about.scrollIntoView({ behavior: 'smooth' });
 });
 
 
 benefitsLink.addEventListener("click", () => {
     closeModal();
-    window.location.href  = "#benefits";
+    const benefits = document.getElementById("benefits");
+    benefits.scrollIntoView({ behavior: 'smooth' });
 });
 
 projectsLink.addEventListener("click", () => {
     closeModal();
-    window.location.href = "#projects";
+     const projects = document.getElementById("projects");
+    projects.scrollIntoView({ behavior: 'smooth' });
 });
 
 faqLink.addEventListener("click", () => {
     closeModal();
-    window.location.href = "#faq";
+    const faq = document.getElementById("faq");
+    faq.scrollIntoView({ behavior: 'smooth' });
 });
 
 orderLink.addEventListener("click", () => {
     closeModal();
-    window.location.href = "#footer";
+    const footer = document.getElementById("footer");
+    footer.scrollIntoView({ behavior: 'smooth' });
+    
 })
