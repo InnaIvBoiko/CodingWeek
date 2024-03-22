@@ -16,9 +16,6 @@ footerForm.addEventListener('submit', onFormSubmit);
 window.addEventListener('keydown', onKeyDown);
 
 footerEmailInput.addEventListener('input', function () {
-  const MAX_LENGTH = footerEmailInput.clientWidth / 8;
-  const inputLength = footerEmailInput.value.length;
-
   if (footerEmailInput.checkValidity()) {
     footerEmailInput.classList.add('is-valid');
     footerEmailInput.classList.remove('is-invalid');
@@ -31,26 +28,59 @@ footerEmailInput.addEventListener('input', function () {
     footerInputMessage.style.color = '#ed3b44';
   }
 
-  if (inputLength > MAX_LENGTH) {
-    footerEmailInput.value =
-      footerEmailInput.value.substring(0, MAX_LENGTH) + '...';
-  }
-
   if (footerEmailInput.value === '') {
     footerEmailInput.classList.remove('is-invalid');
     footerInputMessage.textContent = '';
   }
 });
 
-footerCommentsInput.addEventListener('input', function () {
-  const MAX_LENGTH = footerCommentsInput.clientWidth / 8;
-  const inputLength = footerCommentsInput.value.length;
+let emailFullText = ''; 
+let emailInputText = ''; 
+let commentsFullText = ''; 
+let commentsInputText = ''; 
+
+footerEmailInput.addEventListener('blur', function () {
+  const MAX_LENGTH = getMaxInputLength(footerEmailInput);
+  const inputLength = footerEmailInput.value.length;
+  emailFullText = footerEmailInput.value;
 
   if (inputLength > MAX_LENGTH) {
-    footerCommentsInput.value =
-      footerCommentsInput.value.substring(0, MAX_LENGTH) + '...';
+    emailInputText = emailFullText.substring(0, MAX_LENGTH) + '...';
+    footerEmailInput.value = emailInputText;
+  } else {
+    emailInputText = emailFullText;
   }
 });
+
+footerCommentsInput.addEventListener('blur', function () {
+  const MAX_LENGTH = getMaxInputLength(footerCommentsInput);
+  const inputLength = footerCommentsInput.value.length;
+  commentsFullText = footerCommentsInput.value;
+
+  if (inputLength > MAX_LENGTH) {
+    commentsInputText = commentsFullText.substring(0, MAX_LENGTH) + '...';
+    footerCommentsInput.value = commentsInputText;
+  } else {
+    commentsInputText = commentsFullText;
+  }
+});
+
+footerEmailInput.addEventListener('focus', function () {
+  footerEmailInput.value = emailFullText;
+});
+
+footerCommentsInput.addEventListener('focus', function () {
+  footerCommentsInput.value = commentsFullText;
+});
+
+function getMaxInputLength(inputElement) {
+  const style = window.getComputedStyle(inputElement);
+  const fontSize = parseFloat(style.fontSize);
+  const maxWidth = parseFloat(style.width);
+  const averageCharWidth = fontSize * 0.6;
+
+  return Math.floor(maxWidth / averageCharWidth);
+}
 
 function onFormSubmit(event) {
   event.preventDefault();
