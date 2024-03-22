@@ -3,20 +3,10 @@ import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-const  aboutAccordion = new Accordion('.about-accordеon-container', {
+const  aboutAccordion = new Accordion('.about-accordeon-container', {
   showMultiple: true,
 });
 aboutAccordion.open(0);
-
-// Function to toggle section visibility
-// function toggleSection(id) {
-//   const section = document.getElementById(id);
-//   if (section.style.display === 'none') {
-//     section.style.display = 'block';
-//   } else {
-//     section.style.display = 'none';
-//   }
-// }
 
 // Swiper configuration
 const swiper = new Swiper('.swiper-about', {
@@ -30,8 +20,8 @@ const swiper = new Swiper('.swiper-about', {
   centeredSlides: false,
   loop: true,
   navigation: {
-     nextEl: '.swiper-button-next',
-   // prevEl: '.swiper-button-next',
+    //  nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-next',
   },
   breakpoints: {
         768: {

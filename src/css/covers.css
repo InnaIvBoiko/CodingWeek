@@ -29,7 +29,7 @@
 }
 
 @media (min-resolution: 192dpi),
-  screen and (min-resolution: 2ddpx),
+  screen and (min-resolution: 2dppx),
   screen and (min-device-pixel-ratio: 2) {
   .content-covers {
     background-image: url(../img/covers/bg-covers/bg-covers-mob@2x.png);
@@ -55,21 +55,21 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  /* animation-name: marqueeLine;
+  animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
-/* 
+
 @keyframes marqueeLine {
   from {
-    transform: translateX(-20%);
+    transform: translateX(-5%);
   }
 
   to {
-    transform: translateX(-180%);
+    transform: translateX(-35%);
   }
-} */
+}
 
 .img-covers {
   max-width: 282px;
@@ -89,7 +89,7 @@
   }
 
   @media (min-resolution: 192dpi),
-    screen and (min-resolution: 2ddpx),
+    screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .content-covers {
       background-image: url(../img/covers/bg-covers/bg-covers-tab@2x.png);
@@ -114,7 +114,7 @@
   }
 
   @media (min-resolution: 192dpi),
-    screen and (min-resolution: 2ddpx),
+    screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .content-covers {
       background-image: url(../img/covers/bg-covers/bg-covers-desk@2x.png);
