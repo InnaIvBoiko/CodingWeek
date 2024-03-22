@@ -20,8 +20,7 @@ const swiper = new Swiper('.swiper-about', {
   centeredSlides: false,
   loop: true,
   navigation: {
-    //  nextEl: '.swiper-button-next',
-     prevEl: '.swiper-button-next',
+     nextEl: '.swiper-button-next',
   },
   breakpoints: {
         768: {
@@ -32,3 +31,4 @@ const swiper = new Swiper('.swiper-about', {
         }
     }
 });
+
