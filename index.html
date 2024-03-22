@@ -30,7 +30,7 @@
     <script type="module" crossorigin src="/CodingWeek/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/CodingWeek/assets/vendor-4970faf1.js">
     <link rel="stylesheet" href="/CodingWeek/assets/vendor-d5231366.css">
-    <link rel="stylesheet" href="/CodingWeek/assets/index-d8c85b5e.css">
+    <link rel="stylesheet" href="/CodingWeek/assets/index-f2ad16c1.css">
   </head>
   <body>
     <header class="header">
@@ -45,7 +45,23 @@
       <span class="logo-text">jefferson*</span>
     </a>
     <div class="header-menu">
-      <span class="header-menu-btn" type="button">Menu</span>
+      <span class="header-menu-btn">Menu</span>
+      <nav class="header-nav scrollto">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a class="header-menu-item-link" href="#about">About me</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-item-link" href="#benefits">Benefits</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-item-link" href="#projects">Projects</a>
+          </li>
+          <li class="header-menu-item">
+            <a class="header-menu-item-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <a class="header-link-for-footer" href="#footer">Order the project</a>
     <button class="header-burger-btn" type="button">
@@ -54,11 +70,11 @@
       </svg>
     </button>
   </div>
+
   <div class="modal-header">
-    <div class="modal-header-content">
+    <div class="modal-header-content container">
       <button class="modal-header-body-close-btn" type="button">
         <svg
-          type="button"
           class="modal-header-close-btn-icon"
           aria-label="modal close button"
           width="14"
@@ -68,32 +84,33 @@
         </svg>
       </button>
       <div class="modal-header-menu">
-        <nav class="header-nav scrollto">
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
-              <a class="header-menu-item-link item-link-menu" href="#">Menu</a>
-            </li>
-            <li class="header-menu-item">
-              <a class="header-menu-item-link item-link-about" href="#about"
+        <nav class="modal-header-nav scrollto">
+          <ul class="modal-header-menu-list">
+            <li class="modal-header-menu-item">
+              <a
+                class="modal-header-menu-item-link item-link-about"
+                href="#about"
                 >About me</a
               >
             </li>
-            <li class="header-menu-item">
+            <li class="modal-header-menu-item">
               <a
-                class="header-menu-item-link item-link-benefits"
+                class="modal-header-menu-item-link item-link-benefits"
                 href="#benefits"
                 >Benefits</a
               >
             </li>
-            <li class="header-menu-item">
+            <li class="modal-header-menu-item">
               <a
-                class="header-menu-item-link item-link-projects"
+                class="modal-header-menu-item-link item-link-projects"
                 href="#projects"
                 >Projects</a
               >
             </li>
-            <li class="header-menu-item">
-              <a class="header-menu-item-link item-link-faq" href="#faq">FAQ</a>
+            <li class="modal-header-menu-item">
+              <a class="modal-header-menu-item-link item-link-faq" href="#faq"
+                >FAQ</a
+              >
             </li>
           </ul>
         </nav>
