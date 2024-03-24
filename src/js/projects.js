@@ -2,13 +2,13 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-const prevBtn = document.querySelector('.custom-prev-button');
-const nextBtn = document.querySelector('.custom-next-button');
+const prevBtn = document.querySelector('.projects-left-button');
+const nextBtn = document.querySelector('.projects-right-button');
 const swiper = new Swiper('.projects-swiper', {
     spaceBetween: 100,
     navigation: {
-        nextEl: '.custom-next-button',
-        prevEl: '.custom-prev-button', 
+        nextEl: '.projects-right-button',
+        prevEl: '.projects-left-button', 
     },  
     effect: 'flip',
     limitRotation:	true,	

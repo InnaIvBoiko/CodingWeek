@@ -151,7 +151,7 @@
 
 .about-button-swiper {
   position: absolute;
-  right: -84px;
+  right: -38px;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -159,6 +159,11 @@
   height: 28px;
 }
 
+@media screen and (min-width: 375px) {
+  .about-button-swiper {
+    right: -84px;
+  }
+}
 #about .swiper-slide-active {
   background-color: #ed3b44;
 }
