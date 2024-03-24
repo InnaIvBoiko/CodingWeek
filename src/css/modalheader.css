@@ -53,15 +53,23 @@
   flex-direction: column;
   gap: 12px;
 }
+
 .modal-header-menu-item {
   font-weight: 700;
   font-size: 16px;
-
   letter-spacing: -0.02em;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-skip-ink: none;
   color: #fafafa;
+  transition: color 250ms linear, text-decoration 250ms linear;
 }
+
+.modal-header-menu-item:hover,
+.modal-header-menu-item:focus {
+  color: #ed3b44;
+  text-decoration: underline;
+}
+
 .modal-item-link-menu {
   opacity: 0;
   visibility: hidden;
@@ -86,9 +94,15 @@
   padding: 14px 31px;
   width: 164px;
   height: 45px;
-  background: #ed3b44;
+  background-color: #ed3b44;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: -0.02em;
   color: #fafafa;
+  transition: background-color 250ms linear;
+}
+
+.modal-order-btn-link:hover,
+.modal-order-btn-link:focus {
+  background-color: #e0373f;
 }

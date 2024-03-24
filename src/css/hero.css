@@ -23,6 +23,7 @@
 
 .hero-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
 }
 
@@ -38,6 +39,8 @@
   padding: 10px;
   border-radius: 50px;
   border: solid 1px rgba(250, 250, 250, 0.2);
+  cursor: pointer;
+  transition: border 250ms linear;
 }
 
 .soc-network-item:not(:last-child) {
@@ -45,9 +48,9 @@
   width: 37px;
 }
 
-.soc-network-item:hover {
+.soc-network-item:hover,
+.soc-network-item:focus {
   border: 1px solid rgb(250, 250, 250);
-  cursor: pointer;
 }
 
 @media screen and (min-resolution: 192dpi) {
